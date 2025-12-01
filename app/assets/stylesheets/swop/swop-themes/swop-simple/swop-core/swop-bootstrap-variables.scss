@@ -1,0 +1,189 @@
+$white: $white;
+$black: $black;
+
+$primary: $primary-color;
+$secondary: $secondary-color;
+$success: $success-color;
+$info: $info-color;
+$warning: $warning-color;
+$danger: $danger-color;
+$light: $light-color;
+$dark: $dark-color;
+
+// options
+$enable-negative-margins: true;
+
+// spacing
+$spacers: (
+  0: 0,
+  1: $spacer-1,
+  2: $spacer-2,
+  3: $spacer-3,
+  4: $spacer-4,
+  5: $spacer-5,
+  6: $spacer-6,
+  7: $spacer-7,
+  8: $spacer-8,
+  9: $spacer-9,
+  10: $spacer-10,
+  11: $spacer-11,
+  12: $spacer-12,
+  13: $spacer-13,
+  14: $spacer-14,
+  15: $spacer-15
+);
+
+// body
+$body-color: $text-color;
+$body-bg: $white;
+
+$body-secondary-color: $text-secondary-color;
+
+// links
+$link-color: $text-color;
+$link-hover-color: $text-dark-color;
+
+// paragraphs
+$paragraph-margin-bottom: $spacer-4;
+
+// grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px
+);
+
+// grid containers
+$container-max-widths: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1184px,
+  xxl: 1344px
+);
+
+// grid columns
+$grid-columns: 24;
+$grid-gutter-width: $spacer-7;
+
+// components
+$border-width: $borders-width;
+$border-color: $borders-color;
+
+$border-radius: $md-border-radius;
+$border-radius-sm: $sm-border-radius;
+$border-radius-lg: $lg-border-radius;
+$border-radius-xl: $xl-border-radius;
+
+$box-shadow: $md-box-shadow;
+$box-shadow-sm: $sm-box-shadow;
+$box-shadow-lg: $lg-box-shadow;
+
+// typography
+$font-family-sans-serif: $font-family;
+
+$font-size-base: $md-font-size;
+$font-size-sm: $sm-font-size;
+$font-size-lg: $lg-font-size;
+
+$font-weight-normal: $fw-normal;
+$font-weight-medium: $fw-medium;
+$font-weight-semibold: $fw-semibold;
+$font-weight-bold: $fw-bold;
+
+$font-weight-base: $fw-medium;
+
+$line-height-base: $md-line-height;
+$line-height-sm: $sm-line-height;
+$line-height-lg: $lg-line-height;
+
+$h1-font-size: $h1-font-size;
+$h2-font-size: $h2-font-size;
+$h3-font-size: $h3-font-size;
+$h4-font-size: $h4-font-size;
+$h5-font-size: $h5-font-size;
+$h6-font-size: $h6-font-size;
+
+$headings-margin-bottom: $spacer-3;
+$headings-font-weight: $fw-bold;
+$headings-line-height: $sm-line-height;
+$headings-color: $text-dark-color;
+
+$lead-font-size: $lg-font-size;
+$lead-font-weight: $fw-medium;
+
+$small-font-size: $sm-font-size;
+
+$text-muted: $text-secondary-color;
+
+$hr-margin-y: 0;
+$hr-color: $borders-color;
+
+$hr-bg-color: $borders-color;
+
+$hr-border-color: $borders-color;
+$hr-border-width: $borders-width;
+$hr-opacity: 1;
+
+// buttons + dorms
+$input-btn-padding-y: $md-inputs-btn-padding-y;
+$input-btn-padding-x: $md-inputs-btn-padding-x;
+
+$input-btn-padding-y-sm: $sm-inputs-btn-padding-y;
+$input-btn-padding-x-sm: $sm-inputs-btn-padding-x;
+
+$input-btn-padding-y-lg: $lg-inputs-btn-padding-y;
+$input-btn-padding-x-lg: $lg-inputs-btn-padding-x;
+
+// buttons
+$btn-padding-x: $md-btn-padding-x;
+
+$btn-padding-x-sm: $sm-btn-padding-x;
+
+$btn-padding-x-lg: $lg-btn-padding-x;
+
+$btn-font-weight: $fw-semibold;
+
+$btn-border-radius: $md-inputs-btn-border-radius;
+$btn-border-radius-sm: $sm-inputs-btn-border-radius;
+$btn-border-radius-lg: $lg-inputs-btn-border-radius;
+
+// navs
+$nav-link-padding-y: $spacer-3;
+$nav-link-padding-x: 0;
+$nav-link-font-size: $md-font-size;
+$nav-link-font-weight: $fw-medium;
+$nav-link-color: $text-color;
+$nav-link-hover-color: $text-dark-color;
+
+// navbar
+$navbar-padding-y: $spacer-4;
+
+$navbar-nav-link-padding-x: 0;
+
+$navbar-brand-font-size: 0;
+$navbar-brand-padding-y: 0;
+$navbar-brand-margin-end: 0;
+
+$navbar-toggler-padding-y: $spacer-1;
+$navbar-toggler-padding-x: $spacer-1;
+$navbar-toggler-font-size: $lg-font-size;
+$navbar-toggler-border-radius: 1px;
+
+$navbar-light-color: $text-color;
+$navbar-light-hover-color: $text-dark-color;
+$navbar-light-active-color: $text-dark-color;
+$navbar-light-disabled-color: $text-secondary-color;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$text-secondary-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: transparent;
+
+// offcanvas
+$offcanvas-padding-y: $spacer-4;
+$offcanvas-padding-x: $spacer-4;
+$offcanvas-horizontal-width: 256px;
+$offcanvas-border-width: 0;
+$offcanvas-backdrop-bg: $dark-color;
+$offcanvas-backdrop-opacity: 0.5;
