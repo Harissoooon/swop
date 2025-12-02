@@ -1,7 +1,12 @@
 .nav {
 
   &-tabs {
-    align-items: center;
+    align-items: end;
+    margin-bottom: $spacer-4 !important;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: $spacer-5 !important;
+    }
 
     .nav-item {
       margin-right: $spacer-4;

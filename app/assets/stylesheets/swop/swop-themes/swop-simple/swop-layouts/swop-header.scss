@@ -1,5 +1,13 @@
 header {
 
+  h1 {
+    margin-bottom: $spacer-1 !important;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: $spacer-2 !important;
+    }
+  }
+
   &.py-2 {
     padding: 0 !important;
   }
