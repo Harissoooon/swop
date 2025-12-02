@@ -22,7 +22,12 @@
     }
   }
 
-  .additional-fieldset {
+  .additional-fieldset,
+  .form-control {
+    flex-grow: 1;
+  }
+
+  .additional-fieldset:not(.form-control) {
     margin-right: $spacer-3 !important;
   }
 
