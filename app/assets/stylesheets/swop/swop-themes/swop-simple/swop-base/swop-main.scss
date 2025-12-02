@@ -11,7 +11,8 @@
   }
 
   @include media-breakpoint-up(xl) {
-    height: calc(100vh - 24px);
+    padding-top: $spacer-7;
+    height: calc(100vh - 70.75px);
     overflow-x: scroll;
   }
 
