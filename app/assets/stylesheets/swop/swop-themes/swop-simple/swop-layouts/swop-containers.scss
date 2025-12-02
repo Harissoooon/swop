@@ -1,0 +1,19 @@
+.container {
+
+  &-fluid {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      padding-left: $spacer-5;
+      padding-right: $spacer-5;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      gap: $spacer-9;
+      padding-left: $spacer-6;
+      padding-right: $spacer-9;
+    }
+  }
+}
