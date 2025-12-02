@@ -127,6 +127,20 @@ $hr-border-color: $borders-color;
 $hr-border-width: $borders-width;
 $hr-opacity: 1;
 
+// tables
+$table-cell-padding-y: $spacer-2;
+$table-cell-padding-x: $spacer-3;
+$table-cell-padding-y-sm: $spacer-1;
+$table-cell-padding-x-sm: $spacer-2;
+
+$table-cell-vertical-align: center;
+
+$table-color: $text-color;
+
+$table-striped-bg: $body-bg;
+
+$table-hover-bg: $light-color;
+
 // buttons + dorms
 $input-btn-padding-y: $md-inputs-btn-padding-y;
 $input-btn-padding-x: $md-inputs-btn-padding-x;

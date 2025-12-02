@@ -1,0 +1,31 @@
+.table {
+
+  th {
+    padding-bottom: 10px !important;
+    padding-left: $table-cell-padding-x !important;
+    padding-right: $table-cell-padding-x !important;
+    padding-top: 0 !important;
+  }
+
+  th.shrink {
+    padding-left: 0 !important;
+    padding-bottom: 8px !important;
+  }
+
+  th.header {
+    font-weight: $fw-bold !important;
+    color: $text-dark-color !important;
+  }
+
+  &-group-divider {
+    border-top: $border-width solid $border-color;
+  }
+
+  td {
+    padding: $table-cell-padding-y $table-cell-padding-x !important;
+  }
+
+  td.sticky:first-child {
+    padding-left: 0 !important;
+  }
+}
