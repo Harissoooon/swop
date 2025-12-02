@@ -200,6 +200,27 @@ $navbar-light-disabled-color: $text-secondary-color;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$text-secondary-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: transparent;
 
+// dropdowns
+$dropdown-min-width: rem(160px);
+$dropdown-padding-y: $spacer-1;
+$dropdown-spacer: $spacer-1;
+$dropdown-border-color: $borders-color;
+$dropdown-border-radius: $md-border-radius;
+$dropdown-divider-margin-y: $spacer-1;
+
+$dropdown-link-hover-color: $text-dark-color;
+$dropdown-link-hover-bg: $light-color;
+
+$dropdown-link-active-color: $text-dark-color;
+$dropdown-link-active-bg: $body-bg;
+
+$dropdown-link-disabled-color: $text-secondary-color;
+
+$dropdown-item-padding-y: $spacer * 1.5; // 6px
+$dropdown-item-padding-x: $spacer * 4; // 16px
+
+$dropdown-header-color: $text-secondary-color;
+
 // offcanvas
 $offcanvas-padding-y: $spacer-4;
 $offcanvas-padding-x: $spacer-4;

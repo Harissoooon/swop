@@ -1,0 +1,10 @@
+.dropdown {
+
+  &-menu {
+    box-shadow: $md-box-shadow;
+  }
+
+  &-item {
+    font-weight: $fw-medium;
+  }
+}
