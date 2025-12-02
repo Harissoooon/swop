@@ -11,6 +11,9 @@
 // bootstrap
 @import "bootstrap/scss/bootstrap";
 
-// bootstrap
+// base
+@import "swop-base/swop-body";
+
+// components
 @import "swop-components/swop-buttons";
 @import "swop-components/swop-navbars";
