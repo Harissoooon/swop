@@ -56,11 +56,11 @@ $md-line-height: 1.625;
 $sm-line-height: 1.25;
 
 // buttons + forms
-$sm-inputs-btn-padding-y: $spacer * 2.75; // 11px
+$sm-inputs-btn-padding-y: $spacer * 2.5;  // 10px
 $sm-inputs-btn-padding-x: $spacer * 3.5;  // 14px
-$md-inputs-btn-padding-y: $spacer * 3;    // 12px
+$md-inputs-btn-padding-y: $spacer * 2.75; // 11px
 $md-inputs-btn-padding-x: $spacer * 4;    // 16px
-$lg-inputs-btn-padding-y: $spacer * 3.25; // 13px
+$lg-inputs-btn-padding-y: $spacer * 3;    // 12px
 $lg-inputs-btn-padding-x: $spacer * 4;    // 16px
 
 $sm-inputs-btn-border-radius: $base-border-radius * 2;    // 8px
@@ -68,6 +68,6 @@ $md-inputs-btn-border-radius: $base-border-radius * 2.25; // 9px
 $lg-inputs-btn-border-radius: $base-border-radius * 2.5;  // 10px
 
 // buttons
-$sm-btn-padding-x: $spacer * 5.5; // 22px
-$md-btn-padding-x: $spacer * 6;   // 24px
-$lg-btn-padding-x: $spacer * 6.5; // 26px
+$sm-btn-padding-x: $spacer * 5;   // 20px
+$md-btn-padding-x: $spacer * 5.5; // 22px
+$lg-btn-padding-x: $spacer * 6;   // 24px

@@ -158,6 +158,13 @@ $nav-link-font-weight: $fw-medium;
 $nav-link-color: $text-color;
 $nav-link-hover-color: $text-dark-color;
 
+$nav-tabs-border-color: transparent;
+$nav-tabs-border-width: $borders-width * 2; // 2px
+$nav-tabs-link-hover-border-color: $light-color;
+$nav-tabs-link-active-color: $primary-color;
+$nav-tabs-link-active-bg: transparent;
+$nav-tabs-link-active-border-color: $primary-color;
+
 // navbar
 $navbar-padding-y: $spacer-4;
 
