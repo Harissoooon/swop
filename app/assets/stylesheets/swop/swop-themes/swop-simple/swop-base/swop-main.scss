@@ -1,0 +1,21 @@
+.main {
+  padding-top: $spacer-4;
+  scrollbar-width: none;
+
+  @include media-breakpoint-up(md) {
+    padding-top: $spacer-5;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $spacer-6;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: calc(100vh - 24px);
+    overflow-x: scroll;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

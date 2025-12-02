@@ -2,14 +2,24 @@
   background-color: transparent !important;
   display: none;
   top: 0 !important;
+  scrollbar-width: none;
 
   @include media-breakpoint-up(xl) {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: nowrap;
     gap: $spacer-1;
-    min-width: 192px;
+    height: calc(100vh - 24px);
     max-width: 192px;
+    min-width: 192px;
+    overflow-x: scroll;
+    padding-top: $spacer-6;
     width: 192px;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-link {
