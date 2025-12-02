@@ -53,4 +53,24 @@
       $disabled-color: $white
     );
   }
+
+  &-toggle {
+    align-items: start !important;
+    border-radius: $md-border-radius;
+    border: none;
+    color: $text-dark-color;
+    display: flex;
+    justify-content: start;
+    padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
+    width: 100%;
+
+    *[class*="fa"] {
+      color: $text-secondary-color;
+      font-size: $sm-font-size;
+      margin-left: auto;
+      order: 1;
+      position: relative;
+      top: 4px;
+    }
+  }
 }

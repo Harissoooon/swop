@@ -10,9 +10,13 @@
     }
 
     @include media-breakpoint-up(lg) {
+      padding-left: $spacer-6;
+      padding-right: $spacer-6;
+    }
+
+    @include media-breakpoint-up(xl) {
       flex-direction: row;
       gap: $spacer-9;
-      padding-left: $spacer-6;
       padding-right: $spacer-9;
     }
   }

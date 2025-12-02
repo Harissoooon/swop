@@ -1,3 +1,43 @@
 .sidebar {
+  background-color: transparent !important;
+  display: none;
   top: 0 !important;
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-1;
+    width: 192px;
+  }
+
+  .nav-link {
+    color: $text-color;
+
+    @include media-breakpoint-up(xl) {
+      border-radius: $md-border-radius;
+      padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
+    }
+
+    &:hover {
+      background-color: $light-color;
+      color: $text-dark-color;
+    }
+
+    &.active {
+      font-weight: $fw-semibold;
+
+      @include media-breakpoint-up(xl) {
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 0 !important;
+  }
+
+  .btn-toggle-nav {
+    padding: 0 !important;
+  }
 }
