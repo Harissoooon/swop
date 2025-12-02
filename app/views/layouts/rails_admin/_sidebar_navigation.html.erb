@@ -1,0 +1,8 @@
+<ul class="sidebar nav flex-grow-1">
+  <li class="nav-item">
+    <a class="nav-link <%= 'active' if request.path == rails_admin.dashboard_path %>"href="<%= rails_admin.dashboard_path %>">Dashboard</a>
+  </li>
+  <%= main_navigation %>
+  <%= root_navigation %>
+  <%= static_navigation %>
+</ul>
