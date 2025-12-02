@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+// variables
+@import "rails_admin/custom/variables";
+@import "rails_admin/styles/base/variables";
+
+// mixins
+@import "rails_admin/styles/base/mixins";
+@import "rails_admin/custom/mixins";
+
+// themes
+@import "swop/swop-themes/swop-simple/swop-light";
+
+// libraries
+@import "rails_admin/flatpickr";
+@import "rails_admin/styles/filtering-select";
+@import "rails_admin/styles/filtering-multiselect";
+@import "rails_admin/styles/widgets";
+
+// fontawesome
+@import "rails_admin/font-awesome";
+
+// railsadmin theming
+@import "rails_admin/styles/base/theming";
+@import "rails_admin/custom/theming";
+
+<% if defined?(ActionText::Engine) && Rails.gem_version >= Gem::Version.new('7.0') %>
+  @import "trix";
+<% end %>
