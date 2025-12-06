@@ -1,4 +1,5 @@
 .main {
+  height: 100vh;
   padding-top: $spacer-4;
   scrollbar-width: none;
 
@@ -12,7 +13,6 @@
 
   @include media-breakpoint-up(xl) {
     padding-top: $spacer-7;
-    height: calc(100vh - 70.75px);
     overflow-x: scroll;
   }
 
