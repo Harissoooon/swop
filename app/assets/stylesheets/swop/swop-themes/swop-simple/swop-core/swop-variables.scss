@@ -1,5 +1,5 @@
 // spacing
-$spacer: 4px;
+$spacer: rem(4px);
 $spacer-1: $spacer;       // 4px
 $spacer-2: $spacer * 2;	  // 8px
 $spacer-3: $spacer * 3;	  // 12px
@@ -17,9 +17,9 @@ $spacer-14: $spacer * 32; // 128px
 $spacer-15: $spacer * 36; // 144px
 
 // components
-$borders-width: 1px;
+$borders-width: rem(1px);
 
-$base-border-radius: 4px;
+$base-border-radius: rem(4px);
 $sm-border-radius: $base-border-radius * 1; // 4px
 $md-border-radius: $base-border-radius * 2; // 8px
 $lg-border-radius: $base-border-radius * 3; // 12px
@@ -38,7 +38,7 @@ $fw-medium: 500;
 $fw-semibold: 600;
 $fw-bold: 700;
 
-$base-font-size: 16px;
+$base-font-size: rem(16px);
 
 $h1-font-size: $base-font-size * 2;     // 32px
 $h2-font-size: $base-font-size * 1.75;  // 28px

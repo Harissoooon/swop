@@ -195,7 +195,7 @@ $input-border-radius: $md-inputs-btn-border-radius;
 $input-border-radius-sm: $sm-inputs-btn-border-radius;
 $input-border-radius-lg: $lg-inputs-btn-border-radius;
 
-$form-check-input-width: 20px;
+$form-check-input-width: rem(20px);
 $form-check-padding-start: $form-check-input-width + $spacer-2;
 $form-check-margin-bottom: 0;
 $form-check-label-color: $form-label-color;
@@ -203,11 +203,11 @@ $form-check-label-color: $form-label-color;
 $form-check-input-border: $border-width solid darken($inputs-border-color, 1.25%);
 $form-check-input-border-radius: $sm-border-radius;
 
-$form-check-inline-margin-end: 16px;
+$form-check-inline-margin-end: rem(16px);
 
 $form-switch-color: $inputs-border-color;
-$form-switch-width: 64px;
-$form-switch-padding-start: $form-switch-width + 32px;
+$form-switch-width: rem(64px);
+$form-switch-padding-start: $form-switch-width + rem(32px);
 $form-switch-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
 $form-switch-border-radius: $form-switch-width;
 $form-switch-transition: background-position .15s ease-in-out;
@@ -291,7 +291,7 @@ $navbar-brand-margin-end: 0;
 $navbar-toggler-padding-y: $spacer-1;
 $navbar-toggler-padding-x: $spacer-1;
 $navbar-toggler-font-size: $lg-font-size;
-$navbar-toggler-border-radius: 1px;
+$navbar-toggler-border-radius: rem(1px);
 
 $navbar-light-color: $body-color;
 $navbar-light-hover-color: $body-dark-color;
@@ -301,7 +301,7 @@ $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 $navbar-light-toggler-border-color: transparent;
 
 // dropdowns
-$dropdown-min-width: 160px;
+$dropdown-min-width: rem(160px);
 $dropdown-padding-y: $spacer-1;
 $dropdown-spacer: $spacer-1;
 $dropdown-border-color: $borders-color;
@@ -324,7 +324,7 @@ $dropdown-header-color: $body-secondary-color;
 // offcanvas
 $offcanvas-padding-y: $spacer-4;
 $offcanvas-padding-x: $spacer-4;
-$offcanvas-horizontal-width: 256px;
+$offcanvas-horizontal-width: rem(256px);
 $offcanvas-border-width: 0;
 $offcanvas-backdrop-bg: $dark-color;
 $offcanvas-backdrop-opacity: 0.5;
