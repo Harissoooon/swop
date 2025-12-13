@@ -20,6 +20,11 @@
     color: $body-dark-color !important;
   }
 
+  th.sticky input[type="checkbox"],
+  td.sticky input[type="checkbox"] {
+    @extend .form-check-input;
+  }
+
   &-group-divider {
     border-top: $border-width solid $border-color;
   }

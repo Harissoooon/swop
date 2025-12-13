@@ -195,12 +195,12 @@ $input-border-radius: $md-inputs-btn-border-radius;
 $input-border-radius-sm: $sm-inputs-btn-border-radius;
 $input-border-radius-lg: $lg-inputs-btn-border-radius;
 
-$form-check-input-width: 32px;
+$form-check-input-width: 20px;
 $form-check-padding-start: $form-check-input-width + $spacer-2;
-$form-check-margin-bottom: 2px;
+$form-check-margin-bottom: 0;
 $form-check-label-color: $form-label-color;
 
-$form-check-input-border: darken($inputs-border-color, 1.25%);
+$form-check-input-border: $border-width solid darken($inputs-border-color, 1.25%);
 $form-check-input-border-radius: $sm-border-radius;
 
 $form-check-inline-margin-end: 16px;
