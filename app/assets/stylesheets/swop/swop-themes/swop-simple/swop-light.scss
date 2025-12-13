@@ -1,7 +1,10 @@
-// mixins
+// swop core
+@import "../../swop-core/swop-mixins";
+
+// swop base
 @import "../../swop-base/swop-base";
 
-// core
+// colors
 @import "swop-light/swop-colors/swop-colors";
 
 // core
@@ -9,7 +12,7 @@
 @import "swop-core/swop-bootstrap-variables";
 
 // bootstrap
-@import "bootstrap/scss/bootstrap";
+@import "rails_admin/bootstrap/bootstrap";
 
 // base
 @import "swop-base/swop-base";
