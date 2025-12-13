@@ -23,7 +23,7 @@
   }
 
   .nav-link {
-    color: $text-color;
+    color: $body-color;
 
     @include media-breakpoint-up(xl) {
       border-radius: $md-border-radius;
@@ -32,7 +32,7 @@
 
     &:hover {
       background-color: $light-color;
-      color: $text-dark-color;
+      color: $body-dark-color;
     }
 
     &.active {

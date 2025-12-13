@@ -5,16 +5,16 @@
     @include button-variant(
       $background: $white,
       $border: $inputs-border-color,
-      $color: $text-color,
+      $color: $body-color,
       $hover-background: $white,
       $hover-border: darken($inputs-border-color, 4%),
-      $hover-color: $text-dark-color,
+      $hover-color: $body-dark-color,
       $active-background: $white,
       $active-border: darken($inputs-border-color, 2%),
-      $active-color: $text-dark-color,
+      $active-color: $body-dark-color,
       $disabled-background: $black,
       $disabled-border: $inputs-border-color,
-      $disabled-color: $text-color
+      $disabled-color: $body-color
     );
   }
 
@@ -58,14 +58,14 @@
     align-items: start !important;
     border-radius: $md-border-radius;
     border: none;
-    color: $text-dark-color;
+    color: $body-dark-color;
     display: flex;
     justify-content: start;
     padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
     width: 100%;
 
     *[class*="fa"] {
-      color: $text-secondary-color;
+      color: $body-secondary-color;
       font-size: $sm-font-size;
       margin-left: auto;
       order: 1;

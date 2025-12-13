@@ -34,14 +34,15 @@ $spacers: (
 );
 
 // body
-$body-color: $text-color;
+$body-color: $body-color;
 $body-bg: $white;
 
-$body-secondary-color: $text-secondary-color;
+$body-secondary-color: $body-secondary-color;
 
 // links
-$link-color: $text-color;
-$link-hover-color: $text-dark-color;
+$link-color: $body-color;
+$link-decoration: none;
+$link-hover-color: $body-dark-color;
 
 // paragraphs
 $paragraph-margin-bottom: $spacer-4;
@@ -109,14 +110,14 @@ $h6-font-size: $h6-font-size;
 $headings-margin-bottom: $spacer-3;
 $headings-font-weight: $fw-bold;
 $headings-line-height: $sm-line-height;
-$headings-color: $text-dark-color;
+$headings-color: $body-dark-color;
 
 $lead-font-size: $lg-font-size;
 $lead-font-weight: $fw-medium;
 
 $small-font-size: $sm-font-size;
 
-$text-muted: $text-secondary-color;
+$text-muted: $body-secondary-color;
 
 $hr-margin-y: 0;
 $hr-color: $borders-color;
@@ -135,13 +136,13 @@ $table-cell-padding-x-sm: $spacer-2;
 
 $table-cell-vertical-align: center;
 
-$table-color: $text-color;
+$table-color: $body-color;
 
 $table-striped-bg: $body-bg;
 
 $table-hover-bg: $light-color;
 
-// buttons + dorms
+// buttons + forms
 $input-btn-padding-y: $md-inputs-btn-padding-y;
 $input-btn-padding-x: $md-inputs-btn-padding-x;
 
@@ -164,13 +165,112 @@ $btn-border-radius: $md-inputs-btn-border-radius;
 $btn-border-radius-sm: $sm-inputs-btn-border-radius;
 $btn-border-radius-lg: $lg-inputs-btn-border-radius;
 
+// forms
+$form-text-margin-top: $spacer-1;
+$form-text-font-size: $sm-font-size;
+$form-text-font-weight: $fw-medium;
+$form-text-color: $body-secondary-color;
+
+$form-label-margin-bottom: $spacer-1;
+$form-label-font-size: $sm-font-size;
+$form-label-font-weight: $fw-semibold;
+$form-label-color: $body-dark-color;
+
+$input-padding-y: $md-inputs-btn-padding-y;
+$input-padding-x: $md-inputs-btn-padding-x;
+
+$input-padding-y-sm: $sm-inputs-btn-padding-y;
+$input-padding-x-sm: $sm-inputs-btn-padding-x;
+
+$input-padding-y-lg: $lg-inputs-btn-padding-y;
+$input-padding-x-lg: $lg-inputs-btn-padding-x;
+
+$input-disabled-color: $body-secondary-color;
+$input-disabled-bg: $light-color;
+$input-disabled-border-color: $inputs-border-color;
+
+$input-border-color: $inputs-border-color;
+
+$input-border-radius: $md-inputs-btn-border-radius;
+$input-border-radius-sm: $sm-inputs-btn-border-radius;
+$input-border-radius-lg: $lg-inputs-btn-border-radius;
+
+$form-check-input-width: 32px;
+$form-check-padding-start: $form-check-input-width + $spacer-2;
+$form-check-margin-bottom: 2px;
+$form-check-label-color: $form-label-color;
+
+$form-check-input-border: darken($inputs-border-color, 1.25%);
+$form-check-input-border-radius: $sm-border-radius;
+
+$form-check-inline-margin-end: 16px;
+
+$form-switch-color: $inputs-border-color;
+$form-switch-width: 64px;
+$form-switch-padding-start: $form-switch-width + 32px;
+$form-switch-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
+$form-switch-border-radius: $form-switch-width;
+$form-switch-transition: background-position .15s ease-in-out;
+
+// $input-group-addon-padding-y:           $input-padding-y !default;
+// $input-group-addon-padding-x:           $input-padding-x !default;
+// $input-group-addon-font-weight:         $input-font-weight !default;
+// $input-group-addon-color:               $input-color !default;
+// $input-group-addon-bg:                  var(--#{$prefix}tertiary-bg) !default;
+// $input-group-addon-border-color:        $input-border-color !default;
+
+// $form-select-padding-y:             $input-padding-y !default;
+// $form-select-padding-x:             $input-padding-x !default;
+// $form-select-font-family:           $input-font-family !default;
+// $form-select-font-size:             $input-font-size !default;
+// $form-select-indicator-padding:     $form-select-padding-x * 3 !default; // Extra padding for background-image
+// $form-select-font-weight:           $input-font-weight !default;
+// $form-select-line-height:           $input-line-height !default;
+// $form-select-color:                 $input-color !default;
+// $form-select-bg:                    $input-bg !default;
+// $form-select-disabled-color:        null !default;
+// $form-select-disabled-bg:           $input-disabled-bg !default;
+// $form-select-disabled-border-color: $input-disabled-border-color !default;
+// $form-select-bg-position:           right $form-select-padding-x center !default;
+// $form-select-bg-size:               16px 12px !default; // In pixels because image dimensions
+// $form-select-indicator-color:       $gray-800 !default;
+// $form-select-indicator:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
+
+// $form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 + $form-select-indicator-padding !default;
+// $form-select-feedback-icon-position:    center right $form-select-indicator-padding !default;
+// $form-select-feedback-icon-size:        $input-height-inner-half $input-height-inner-half !default;
+
+// $form-select-border-width:        $input-border-width !default;
+// $form-select-border-color:        $input-border-color !default;
+// $form-select-border-radius:       $input-border-radius !default;
+// $form-select-box-shadow:          var(--#{$prefix}box-shadow-inset) !default;
+
+// $form-select-focus-border-color:  $input-focus-border-color !default;
+// $form-select-focus-width:         $input-focus-width !default;
+// $form-select-focus-box-shadow:    0 0 0 $form-select-focus-width $input-btn-focus-color !default;
+
+// $form-select-padding-y-sm:        $input-padding-y-sm !default;
+// $form-select-padding-x-sm:        $input-padding-x-sm !default;
+// $form-select-font-size-sm:        $input-font-size-sm !default;
+// $form-select-border-radius-sm:    $input-border-radius-sm !default;
+
+// $form-select-padding-y-lg:        $input-padding-y-lg !default;
+// $form-select-padding-x-lg:        $input-padding-x-lg !default;
+// $form-select-font-size-lg:        $input-font-size-lg !default;
+// $form-select-border-radius-lg:    $input-border-radius-lg !default;
+
+// $form-select-transition:          $input-transition !default;
+
+$form-file-button-bg: $white;
+$form-file-button-hover-bg: $white;
+
 // navs
 $nav-link-padding-y: $spacer-3;
 $nav-link-padding-x: 0;
 $nav-link-font-size: $md-font-size;
 $nav-link-font-weight: $fw-medium;
-$nav-link-color: $text-color;
-$nav-link-hover-color: $text-dark-color;
+$nav-link-color: $body-color;
+$nav-link-hover-color: $body-dark-color;
 
 $nav-tabs-border-color: transparent;
 $nav-tabs-border-width: $borders-width * 2; // 2px
@@ -193,33 +293,33 @@ $navbar-toggler-padding-x: $spacer-1;
 $navbar-toggler-font-size: $lg-font-size;
 $navbar-toggler-border-radius: 1px;
 
-$navbar-light-color: $text-color;
-$navbar-light-hover-color: $text-dark-color;
-$navbar-light-active-color: $text-dark-color;
-$navbar-light-disabled-color: $text-secondary-color;
-$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$text-secondary-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-color: $body-color;
+$navbar-light-hover-color: $body-dark-color;
+$navbar-light-active-color: $body-dark-color;
+$navbar-light-disabled-color: $body-secondary-color;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$body-secondary-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: transparent;
 
 // dropdowns
-$dropdown-min-width: rem(160px);
+$dropdown-min-width: 160px;
 $dropdown-padding-y: $spacer-1;
 $dropdown-spacer: $spacer-1;
 $dropdown-border-color: $borders-color;
 $dropdown-border-radius: $md-border-radius;
 $dropdown-divider-margin-y: $spacer-1;
 
-$dropdown-link-hover-color: $text-dark-color;
+$dropdown-link-hover-color: $body-dark-color;
 $dropdown-link-hover-bg: $light-color;
 
-$dropdown-link-active-color: $text-dark-color;
+$dropdown-link-active-color: $body-dark-color;
 $dropdown-link-active-bg: $body-bg;
 
-$dropdown-link-disabled-color: $text-secondary-color;
+$dropdown-link-disabled-color: $body-secondary-color;
 
 $dropdown-item-padding-y: $spacer * 1.5; // 6px
 $dropdown-item-padding-x: $spacer * 4; // 16px
 
-$dropdown-header-color: $text-secondary-color;
+$dropdown-header-color: $body-secondary-color;
 
 // offcanvas
 $offcanvas-padding-y: $spacer-4;
