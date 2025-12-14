@@ -1,8 +1,5 @@
-<ul class="sidebar nav">
-  <li class="nav-item nav-item-dashboard">
-    <a class="nav-link <%= 'active' if request.path == rails_admin.dashboard_path %>"href="<%= rails_admin.dashboard_path %>">Dashboard</a>
-  </li>
-  <%= main_navigation %>
-  <%= root_navigation %>
-  <%= static_navigation %>
-</ul>
+<% if Swop.configuration.theme_style == :simple %>
+  <%= render partial: "layouts/rails_admin/swop-simple/sidebar_navigation" %>
+<% else %>
+  <%= render partial: "layouts/rails_admin/default/sidebar_navigation" %>
+<% end %>

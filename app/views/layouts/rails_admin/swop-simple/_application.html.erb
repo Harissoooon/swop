@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+    <%= render "layouts/rails_admin/head" %>
+  </head>
+  <body class="rails_admin pt-0">
+    <div data-i18n-options="<%= I18n.t("admin.js").to_json %>" id="admin-js"></div>
+    <div class="loading" id="loading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i></div>
+    <div class="container-fluid overflow-hidden">
+      <%= render "layouts/rails_admin/sidebar_navigation" %>
+      <main role="main" class="main flex-grow-1">
+        <%= render template: 'layouts/rails_admin/content' %>
+      </div>
+    </div>
+  </body>
+</html>

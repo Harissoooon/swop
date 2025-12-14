@@ -1,9 +1,7 @@
-<% if current_page.last? %>
-  <li class="page-item next disabled">
-    <%= link_to "Next", '#', class: 'page-link' %>
-  </li>
+<% current_page = current_page %>
+
+<% if Swop.configuration.theme_style == :simple %>
+  <%= render partial: "kaminari/ra-twitter-bootstrap/swop-simple/next_page", locals: { current_page: current_page, url: url } %>
 <% else %>
-  <li class="page-item next">
-    <%= link_to "Next", url, class: 'page-link' %>
-  </li>
+  <%= render partial: "kaminari/ra-twitter-bootstrap/default/next_page", locals: { current_page: current_page, url: url } %>
 <% end %>

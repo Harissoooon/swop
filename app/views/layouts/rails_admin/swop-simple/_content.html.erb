@@ -1,0 +1,32 @@
+<title><%= "#{@abstract_model.try(:pretty_name) || @page_name} | #{[_get_plugin_name[0] || 'Rails', _get_plugin_name[1] || 'Admin'].join(' ')}" %></title>
+<header class="header" data-model="<%= @abstract_model.to_param %>">
+  <h1 class="mb-0"><%= @page_name %></h1>
+  <div class="dropdown">
+    <button class="btn btn-current-user" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="btn-current-user-details text-truncate">
+        <% if _current_user.try(:name).present? %>
+          <%= _current_user.name %>
+        <% elsif _current_user.try(:email).present? %>
+          <%= _current_user.email %>
+        <% end %>
+      </span>
+      <div class="tile-avatar flex-shrink-0"><i class="fa-solid fa-user tile-avatar-icon"></i></div>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><%= link_to "Log out", logout_path, method: logout_method, class: "dropdown-item", data: { turbo: 'false' } %></li>
+      <li><%= link_to "Log out", logout_path, method: logout_method, class: "dropdown-item", data: { turbo: 'false' } %></li>
+      <li><%= link_to "Log out", logout_path, method: logout_method, class: "dropdown-item", data: { turbo: 'false' } %></li>
+    </ul>
+  </div>
+</header>
+<% flash && flash.each do |key, value| %>
+  <div class="<%= flash_alert_class(key) %> alert alert-dismissible">
+    <%= value %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% end %>
+<ul class="nav nav-tabs">
+  <%= menu_for((@abstract_model ? (@object.try(:persisted?) ? :member : :collection) : :root), @abstract_model, @object) %>
+  <%= content_for :contextual_tabs %>
+</ul>
+<%= yield %>
