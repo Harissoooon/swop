@@ -42,6 +42,7 @@
   margin-bottom: $spacer-1;
 
   & + .row {
+    @extend .align-items-center;
     width: unset !important;
 
     .input-group > .form-control + .btn-primary {
@@ -74,7 +75,7 @@ form {
     }
 
     @include media-breakpoint-up(lg) {
-      padding: $spacer-5 !important;
+      padding: $spacer-6 !important;
     }
   }
 }

@@ -321,6 +321,31 @@ $dropdown-item-padding-x: $spacer * 4; // 16px
 
 $dropdown-header-color: $body-secondary-color;
 
+// pagination
+$pagination-padding-y: $spacer-1;
+$pagination-padding-x: $spacer-1;
+
+$pagination-font-size: $md-font-size;
+
+$pagination-color: $body-color;
+$pagination-bg: $body-bg;
+$pagination-border-radius: $md-inputs-btn-border-radius;
+$pagination-border-width: 0;
+
+$pagination-focus-color: $body-dark-color;
+$pagination-focus-bg: $light-color;
+
+$pagination-hover-color: $body-dark-color;
+$pagination-hover-bg: $light-color;
+
+$pagination-active-color: $white;
+$pagination-active-bg: $primary-color;
+
+$pagination-disabled-color: $body-secondary-color;
+$pagination-disabled-bg: transparent;
+
+$pagination-transition: color .0s ease-in-out, background-color .0s ease-in-out, box-shadow .0s ease-in-out;
+
 // offcanvas
 $offcanvas-padding-y: $spacer-4;
 $offcanvas-padding-x: $spacer-4;
