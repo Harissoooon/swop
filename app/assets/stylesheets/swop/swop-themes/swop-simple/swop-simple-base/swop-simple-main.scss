@@ -15,21 +15,16 @@
   }
 
   @include media-breakpoint-up(xl) {
+    margin-right: -$spacer-1;
     margin-left: -$spacer-1;
     overflow-x: scroll;
     padding-bottom: $spacer-7;
     padding-left: $spacer-1;
+    padding-right: $spacer-1;
     padding-top: $spacer-7;
   }
 
   &::-webkit-scrollbar {
     display: none;
-  }
-
-  form.main {
-    height: auto;
-    overflow-x: auto;
-    padding-bottom: 0;
-    padding-top: 0;
   }
 }
