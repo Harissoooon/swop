@@ -7,11 +7,6 @@
   padding: 0;
   width: rem(32px);
 
-  &.bg-primary {
-    color: $primary-color !important;
-    background-color: $primary-light-color !important;
-  }
-
   &.bg-secondary {
     color: $secondary-color !important;
     background-color: $secondary-light-color !important;
@@ -22,24 +17,15 @@
     background-color: $success-light-color !important;
   }
 
-  &.bg-info {
-    color: $info-color !important;
-    background-color: $info-light-color !important;
-  }
-
-  &.bg-warning {
-    color: $warning-color !important;
-    background-color: $warning-light-color !important;
-  }
-
   &.bg-danger {
     color: $danger-color !important;
     background-color: $danger-light-color !important;
   }
 
+  // Smaller badges for tables
   td & {
+    border-radius: $sm-border-radius;
     height: rem(24px);
     width: rem(24px);
-    border-radius: $sm-border-radius;
   }
 }

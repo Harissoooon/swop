@@ -1,20 +1,10 @@
 .container {
 
   &-fluid {
-    display: flex;
-    flex-direction: column;
-
-    @include media-breakpoint-up(md) {
-      padding-left: $spacer-5;
-      padding-right: $spacer-5;
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding-left: $spacer-6;
-      padding-right: $spacer-6;
-    }
 
     @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: column;
       flex-direction: row;
       gap: $spacer-9;
       padding-right: $spacer-9;

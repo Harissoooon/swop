@@ -1,9 +1,4 @@
 .sidebar {
-  background-color: transparent !important;
-  display: none;
-  padding-left: 0 !important;
-  scrollbar-width: none;
-  top: 0 !important;
 
   @include media-breakpoint-up(xl) {
     display: flex;
@@ -11,7 +6,7 @@
     flex-grow: 1;
     flex-wrap: nowrap;
     gap: $spacer-1;
-    height: 100vh;
+    height: calc(100vh - 4px); // body border
     max-width: rem(192px);
     min-width: rem(192px);
     overflow-x: scroll;
@@ -20,46 +15,62 @@
   }
 
   &::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-link {
-    color: $body-color;
 
     @include media-breakpoint-up(xl) {
-      border-radius: $md-border-radius;
-      padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
-    }
-
-    &:hover {
-      background-color: $light-color;
-      color: $body-dark-color;
-    }
-
-    &.active {
-      font-weight: $fw-semibold;
-
-      @include media-breakpoint-up(xl) {
-        background-color: $primary-color;
-        color: $white;
-      }
-    }
-  }
-
-  li {
-    margin-bottom: 0 !important;
-  }
-
-  .nav-item-dashboard {
-    margin-bottom: -$spacer-1 !important;
-
-    & + li .btn-toggle {
       display: none;
     }
   }
 
+  .nav-link {
+
+    @include media-breakpoint-up(xl) {
+      border-radius: $md-border-radius;
+      color: $body-color;
+      padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
+    }
+
+    &:hover {
+
+      @include media-breakpoint-up(xl) {
+        background-color: $light-color;
+        color: $body-dark-color;
+      }
+    }
+
+    &.active {
+
+      @include media-breakpoint-up(xl) {
+        background-color: $primary-color;
+        color: $white;
+        font-weight: $fw-semibold;
+      }
+    }
+  }
+
+  // Fighting RailsAdmin
+  li {
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0 !important;
+    }
+  }
 
   .btn-toggle-nav {
     padding: 0 !important;
+  }
+
+  // Hide default 'Navigation' btn-toggle
+  .nav-item-dashboard {
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: -$spacer-1 !important;
+    }
+
+    & + li .btn-toggle {
+
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
   }
 }

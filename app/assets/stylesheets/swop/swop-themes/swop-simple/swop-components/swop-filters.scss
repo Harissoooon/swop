@@ -5,7 +5,7 @@
   margin-top: 0 !important;
 
   .btn {
-    @extend .btn-white;
+    @extend .btn-body;
     align-items: center;
     display: flex;
     flex-shrink: 0;
@@ -36,11 +36,12 @@
   }
 }
 
-// miscellaneous
+// invisible hr
 .filters_box {
   border-color: transparent;
   margin-bottom: $spacer-1;
 
+  // main filter row
   & + .row {
     @extend .align-items-center;
     width: unset !important;
@@ -55,19 +56,13 @@
   }
 }
 
-form {
+// wrapper
+form .card {
 
-  .card {
+  @include media-breakpoint-up(xl) {
     display: flex;
     flex-direction: column;
-    margin-bottom: $spacer-4 !important;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: $spacer-5 !important;
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding: $spacer-6 !important;
-    }
+    margin-bottom: $spacer-5 !important;
+    padding: $spacer-6 !important;
   }
 }

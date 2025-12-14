@@ -1,23 +1,5 @@
 .btn {
 
-  &-white {
-
-    @include button-variant(
-      $background: $white,
-      $border: $inputs-border-color,
-      $color: $body-color,
-      $hover-background: $white,
-      $hover-border: darken($inputs-border-color, 4%),
-      $hover-color: $body-dark-color,
-      $active-background: $white,
-      $active-border: darken($inputs-border-color, 2%),
-      $active-color: $body-dark-color,
-      $disabled-background: $black,
-      $disabled-border: $inputs-border-color,
-      $disabled-color: $body-color
-    );
-  }
-
   &-primary {
 
     @include button-variant(
@@ -54,24 +36,33 @@
     );
   }
 
-  &-dark {
+  &-body {
 
     @include button-variant(
-      $background: $dark-color,
-      $border: $dark-color,
-      $color: $white,
-      $hover-background: darken($dark-color, 2%),
-      $hover-border: darken($dark-color, 2%),
-      $hover-color: $white,
-      $active-background: darken($dark-color, 1%),
-      $active-border: darken($dark-color, 1%),
-      $active-color: $white,
-      $disabled-background: $dark-color,
-      $disabled-border: $dark-color,
-      $disabled-color: $white
+      $background: $body-bg,
+      $border: $inputs-border-color,
+      $color: $body-color,
+      $hover-background: $body-bg,
+      $hover-border: darken($inputs-border-color, 4%),
+      $hover-color: $body-dark-color,
+      $active-background: $body-bg,
+      $active-border: darken($inputs-border-color, 2%),
+      $active-color: $body-dark-color,
+      $disabled-background: $black,
+      $disabled-border: $inputs-border-color,
+      $disabled-color: $body-color
     );
   }
 
+  &-info {
+    @extend .btn-primary;
+  }
+
+  &-light {
+    @extend .btn-body;
+  }
+
+  // Sidebar
   &-toggle {
     align-items: start !important;
     border-radius: $md-border-radius;
@@ -100,25 +91,8 @@
     }
   }
 
-  &-info {
-    @extend .btn-primary;
-  }
-
-  &-light {
-    @extend .btn-white;
-  }
-
-  &.create,
-  &.update,
-  &.btn-remove-image,
-  &[type="submit"] {
-
-    *[class*="fa"] {
-      display: none;
-    }
-  }
-
-  &-navbar-user {
+  // current user
+  &-current-user {
     align-items: center;
     background-color: transparent;
     border-radius: 0;
@@ -145,6 +119,17 @@
       @include media-breakpoint-up(md) {
         display: block;
       }
+    }
+  }
+
+  // Remove FA icons
+  &.create,
+  &.update,
+  &.btn-remove-image,
+  &[type="submit"] {
+
+    *[class*="fa"] {
+      display: none;
     }
   }
 }

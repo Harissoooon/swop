@@ -1,11 +1,12 @@
 // base
 @import "swop-base/swop-base";
+@import "swop-base/swop-body";
 @import "swop-base/swop-main";
 @import "swop-base/swop-typography";
 
 // layouts
-@import "swop-layouts/swop-header";
 @import "swop-layouts/swop-containers";
+@import "swop-layouts/swop-header";
 
 // components
 @import "swop-components/swop-badges";
