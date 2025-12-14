@@ -1,6 +1,7 @@
 #sidescroll + .row {
   @extend .gy-0;
   @extend .justify-content-center;
+  width: 100%;
 
   *[class*="col"] {
     flex: 0 0 auto;
