@@ -1,22 +1,35 @@
 .main {
   height: 100vh;
+  padding-bottom: $spacer-4;
   padding-top: $spacer-4;
   scrollbar-width: none;
 
   @include media-breakpoint-up(md) {
+    padding-bottom: $spacer-5;
     padding-top: $spacer-5;
   }
 
   @include media-breakpoint-up(lg) {
+    padding-bottom: $spacer-6;
     padding-top: $spacer-6;
   }
 
   @include media-breakpoint-up(xl) {
-    padding-top: $spacer-7;
+    margin-left: -$spacer-1;
     overflow-x: scroll;
+    padding-bottom: $spacer-7;
+    padding-left: $spacer-1;
+    padding-top: $spacer-7;
   }
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  form.main {
+    height: auto;
+    overflow-x: auto;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }

@@ -68,10 +68,10 @@ form {
   .card {
     display: flex;
     flex-direction: column;
-    margin-bottom: $spacer-3 !important;
+    margin-bottom: $spacer-4 !important;
 
     @include media-breakpoint-up(md) {
-      margin-bottom: $spacer-4 !important;
+      margin-bottom: $spacer-5 !important;
     }
 
     @include media-breakpoint-up(lg) {

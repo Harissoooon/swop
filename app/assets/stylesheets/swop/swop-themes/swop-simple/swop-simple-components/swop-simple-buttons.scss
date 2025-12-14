@@ -36,6 +36,24 @@
     );
   }
 
+  &-danger {
+
+    @include button-variant(
+      $background: $danger-color,
+      $border: $danger-color,
+      $color: $white,
+      $hover-background: darken($danger-color, 2%),
+      $hover-border: darken($danger-color, 2%),
+      $hover-color: $white,
+      $active-background: darken($danger-color, 1%),
+      $active-border: darken($danger-color, 1%),
+      $active-color: $white,
+      $disabled-background: $danger-color,
+      $disabled-border: $danger-color,
+      $disabled-color: $white
+    );
+  }
+
   &-dark {
 
     @include button-variant(

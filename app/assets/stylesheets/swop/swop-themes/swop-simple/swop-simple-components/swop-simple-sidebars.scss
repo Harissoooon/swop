@@ -1,8 +1,9 @@
 .sidebar {
   background-color: transparent !important;
   display: none;
-  top: 0 !important;
+  padding-left: 0 !important;
   scrollbar-width: none;
+  top: 0 !important;
 
   @include media-breakpoint-up(xl) {
     display: flex;
