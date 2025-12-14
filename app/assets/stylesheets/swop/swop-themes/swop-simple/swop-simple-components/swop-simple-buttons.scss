@@ -99,4 +99,21 @@
       top: $spacer-1;
     }
   }
+
+  &-info {
+    @extend .btn-primary;
+  }
+
+  &-light {
+    @extend .btn-white;
+  }
+
+  &.create,
+  &.update,
+  &[type="submit"] {
+
+    *[class*="fa"] {
+      display: none;
+    }
+  }
 }
