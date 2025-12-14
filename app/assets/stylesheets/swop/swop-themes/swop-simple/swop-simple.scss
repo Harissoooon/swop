@@ -1,31 +1,31 @@
 // core
-@import "swop-simple-core/swop-simple-variables";
-@import "swop-simple-core/swop-simple-bootstrap-variables";
+@import "swop-core/swop-variables";
+@import "swop-core/swop-bootstrap-variables";
 
 // bootstrap
 @import "rails_admin/bootstrap/bootstrap";
 
 // base
-@import "swop-simple-base/swop-simple-base";
-@import "swop-simple-base/swop-simple-main";
-@import "swop-simple-base/swop-simple-typography";
+@import "swop-base/swop-base";
+@import "swop-base/swop-main";
+@import "swop-base/swop-typography";
 
 // layouts
-@import "swop-simple-layouts/swop-simple-header";
-@import "swop-simple-layouts/swop-simple-containers";
+@import "swop-layouts/swop-header";
+@import "swop-layouts/swop-containers";
 
 // components
-@import "swop-simple-components/swop-simple-badges";
-@import "swop-simple-components/swop-simple-buttons";
-@import "swop-simple-components/swop-simple-dropdowns";
-@import "swop-simple-components/swop-simple-filters";
-@import "swop-simple-components/swop-simple-forms";
-@import "swop-simple-components/swop-simple-images";
-@import "swop-simple-components/swop-simple-input-groups";
-@import "swop-simple-components/swop-simple-loading";
-@import "swop-simple-components/swop-simple-navs";
-@import "swop-simple-components/swop-simple-pagination";
-@import "swop-simple-components/swop-simple-progress";
-@import "swop-simple-components/swop-simple-sidebars";
-@import "swop-simple-components/swop-simple-tables";
-@import "swop-simple-components/swop-simple-tiles";
+@import "swop-components/swop-badges";
+@import "swop-components/swop-buttons";
+@import "swop-components/swop-dropdowns";
+@import "swop-components/swop-filters";
+@import "swop-components/swop-forms";
+@import "swop-components/swop-images";
+@import "swop-components/swop-input-groups";
+@import "swop-components/swop-loading";
+@import "swop-components/swop-navs";
+@import "swop-components/swop-pagination";
+@import "swop-components/swop-progress";
+@import "swop-components/swop-sidebars";
+@import "swop-components/swop-tables";
+@import "swop-components/swop-tiles";
