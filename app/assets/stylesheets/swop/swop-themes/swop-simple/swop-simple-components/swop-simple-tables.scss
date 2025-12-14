@@ -26,7 +26,7 @@
   }
 
   &-group-divider {
-    border-top: $border-width solid $border-color;
+    border-top: $border-width solid $inputs-border-color !important;
   }
 
   :not(thead) tr:last-child {
@@ -36,11 +36,37 @@
     }
   }
 
+  thead tr th {
+    padding-top: $spacer-1 !important;
+    margin-top: -$spacer-1 !important;
+  }
+
   td {
     padding: $table-cell-padding-y $table-cell-padding-x !important;
   }
 
   td:first-child {
     padding-left: 0 !important;
+  }
+
+  tr:first-child th.sticky,
+  td:first-child.sticky {
+    padding-left: $spacer-1 !important;
+  }
+
+  tbody tr:hover .links .nav .nav-item .nav-link {
+    color: $body-color;
+  }
+
+  tbody tr .links .nav .nav-item {
+    padding: 0 $spacer-1 !important;
+
+    .nav-link {
+      color: $body-secondary-color;
+
+      &:hover {
+        color: $body-dark-color;
+      }
+    }
   }
 }

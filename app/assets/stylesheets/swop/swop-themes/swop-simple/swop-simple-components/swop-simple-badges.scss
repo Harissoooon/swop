@@ -1,0 +1,42 @@
+.badge {
+
+  &.bg-primary {
+    color: $primary-color !important;
+    background-color: $primary-light-color !important;
+  }
+
+  &.bg-secondary {
+    color: $secondary-color !important;
+    background-color: $secondary-light-color !important;
+  }
+
+  &.bg-success {
+    color: $success-color !important;
+    background-color: $success-light-color !important;
+  }
+
+  &.bg-info {
+    color: $info-color !important;
+    background-color: $info-light-color !important;
+  }
+
+  &.bg-warning {
+    color: $warning-color !important;
+    background-color: $warning-light-color !important;
+  }
+
+  &.bg-danger {
+    color: $danger-color !important;
+    background-color: $danger-light-color !important;
+  }
+
+  td & {
+    height: rem(24px);
+    width: rem(24px);
+    display: flex;
+    border-radius: $sm-border-radius;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}

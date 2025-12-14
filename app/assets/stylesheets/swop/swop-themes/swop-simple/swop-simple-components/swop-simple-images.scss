@@ -1,0 +1,15 @@
+.img {
+
+  &-thumbnail {
+    background-color: transparent;
+    border-radius: $sm-border-radius;
+    border: none;
+    height: rem(40px);
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.attachments_field.multiple_active_storage_type a:not(:first-child) {
+    display: none;
+  }

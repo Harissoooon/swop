@@ -11,11 +11,11 @@
     flex-wrap: nowrap;
     gap: $spacer-1;
     height: 100vh;
-    max-width: 192px;
-    min-width: 192px;
+    max-width: rem(192px);
+    min-width: rem(192px);
     overflow-x: scroll;
     padding-top: $spacer-7;
-    width: 192px;
+    width: rem(192px);
   }
 
   &::-webkit-scrollbar {

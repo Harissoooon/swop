@@ -10,7 +10,7 @@ $strawberry: #f33339;     // private – danger
 $bright-snow: #f7f7f9;    // private – light
 $carbon-black: #1c1c1e;   // private – dark
 
-$gun-metal: #3a3a3c; // private – text
+$gun-metal: #404044; // private – text
 
 $platinum: #eeeef2;  // private – border
 $alabaster: #e5e5ea; // private – inputs border
@@ -24,7 +24,14 @@ $danger-color: $strawberry;
 $light-color: $bright-snow;
 $dark-color: $carbon-black;
 
-$body-bg: $black;
+$primary-light-color: lighten($azure-blue, 42%);
+$secondary-light-color: lighten($rosy-granite, 38%);
+$success-light-color: lighten($jade-green, 51%);
+$info-light-color: lighten($electric-slide, 35%);
+$warning-light-color: lighten($dark-orange, 40%);
+$danger-light-color: lighten($strawberry, 38%);
+
+$body-bg: $white;
 
 $body-color: $gun-metal;
 $body-secondary-color: $rosy-granite;
