@@ -1,0 +1,7 @@
+en:
+  admin:
+    actions:
+      dashboard:
+        title: "Dashboard"
+      index:
+        title: "%{model_label_plural}"
