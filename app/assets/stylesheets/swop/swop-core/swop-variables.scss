@@ -1,0 +1,34 @@
+// spacing
+$spacer: rem(4px);
+$spacer-1: $spacer;       // 4px
+$spacer-2: $spacer * 2;	  // 8px
+$spacer-3: $spacer * 3;	  // 12px
+$spacer-4: $spacer * 4;	  // 16px
+$spacer-5: $spacer * 5;	  // 20px
+$spacer-6: $spacer * 6;	  // 24px
+$spacer-7: $spacer * 8;	  // 32px
+$spacer-8: $spacer * 10;	// 40px
+$spacer-9: $spacer * 12;  // 48px
+$spacer-10: $spacer * 16; // 64px
+$spacer-11: $spacer * 20; // 80px
+$spacer-12: $spacer * 24; // 96px
+$spacer-13: $spacer * 28; // 112px
+$spacer-14: $spacer * 32; // 128px
+$spacer-15: $spacer * 36; // 144px
+
+// components
+$borders-width: rem(1px);
+
+$base-border-radius: rem(4px);
+
+// typography
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+$base-font-size: rem(16px);
+
+$lg-line-height: 2;
+$md-line-height: 1.625;
+$sm-line-height: 1.25;
