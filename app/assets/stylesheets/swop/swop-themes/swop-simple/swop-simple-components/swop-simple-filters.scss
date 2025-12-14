@@ -45,16 +45,8 @@
     @extend .align-items-center;
     width: unset !important;
 
-    .input-group > .form-control + .btn-primary {
-      @extend .btn-white;
-
-      *[class*="fa"] {
-        display: none;
-      }
-
-      & + .btn-info {
-        @extend .btn-white;
-      }
+    .input-group > .form-control + .btn-primary *[class*="fa"] {
+      display: none;
     }
 
     .btn-info {

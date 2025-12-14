@@ -76,7 +76,7 @@ en:
         breadcrumb: "%{model_label_plural}"
         no_records: "No records found"
       show:
-        title: "Details for %{model_label} '%{object_label}'"
+        title: "%{object_label}"
         menu: "Show"
         breadcrumb: "%{object_label}"
       show_in_app:
@@ -88,7 +88,7 @@ en:
         link: "Add a new %{model_label}"
         done: "created"
       edit:
-        title: "Edit %{model_label} '%{object_label}'"
+        title: "Edit %{object_label}"
         menu: "Edit"
         breadcrumb: "Edit"
         link: "Edit this %{model_label}"
@@ -112,7 +112,7 @@ en:
         bulk_link: "Export selected %{model_label_plural}"
         done: "exported"
       history_index:
-        title: "History for %{model_label_plural}"
+        title: "%{model_label_plural} history"
         menu: "History"
         breadcrumb: "History"
       history_show:

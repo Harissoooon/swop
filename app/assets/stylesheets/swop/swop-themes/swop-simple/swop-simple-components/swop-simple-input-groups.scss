@@ -1,5 +1,7 @@
 .input-group {
 
+  .btn,
+  .btn-primary,
   &-btn .btn {
     @extend .btn-white;
   }
