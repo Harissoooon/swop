@@ -64,6 +64,14 @@
     padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
     width: 100%;
 
+    &:hover {
+      color: $body-dark-color;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
     *[class*="fa"] {
       color: $body-secondary-color;
       font-size: $sm-font-size;

@@ -49,6 +49,15 @@
     margin-bottom: 0 !important;
   }
 
+  .nav-item-dashboard {
+    margin-bottom: -$spacer-1 !important;
+
+    & + li .btn-toggle {
+      display: none;
+    }
+  }
+
+
   .btn-toggle-nav {
     padding: 0 !important;
   }
