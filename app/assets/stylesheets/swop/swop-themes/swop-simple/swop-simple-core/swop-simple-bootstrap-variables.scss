@@ -297,6 +297,12 @@ $pagination-disabled-bg: transparent;
 
 $pagination-transition: color .0s ease-in-out, background-color .0s ease-in-out, box-shadow .0s ease-in-out;
 
+// progress bars
+$progress-height: rem(14px);
+$progress-font-size: $sm-font-size;
+$progress-bg: $border-color;
+$progress-border-radius: $lg-border-radius;
+
 // offcanvas
 $offcanvas-padding-y: $spacer-4;
 $offcanvas-padding-x: $spacer-4;
