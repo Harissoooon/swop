@@ -117,4 +117,34 @@
       display: none;
     }
   }
+
+  &-navbar-user {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    display: flex;
+    gap: $spacer-4;
+    margin-bottom: -$spacer-1;
+    margin-top: -$spacer-1;
+    max-width: rem(256px);
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &-details {
+      display: none;
+
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+  }
 }

@@ -1,0 +1,20 @@
+.tile {
+
+  &-avatar {
+    align-items: center;
+    background-color: darken($light-color, 2%);
+    border-radius: 50%;
+    color: darken($light-color, 28%);
+    display: flex;
+    font-size: rem(32px);
+    height: rem(40px);
+    justify-content: center;
+    overflow: hidden;
+    width: rem(40px);
+
+    &-icon {
+      position: relative;
+      top: rem(6px)
+    }
+  }
+}

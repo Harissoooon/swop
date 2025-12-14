@@ -17,7 +17,7 @@ p {
   }
 }
 
-ul:not(.nav-tabs) {
+ul:not([class]) {
   margin-bottom: $spacer-3 !important;
   padding-left: $spacer-4;
 
