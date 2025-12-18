@@ -6,7 +6,7 @@
     flex-grow: 1;
     flex-wrap: nowrap;
     gap: $spacer-1;
-    height: calc(100vh - 4px); // body border
+    height: 100vh;
     max-width: rem(192px);
     min-width: rem(192px);
     overflow-x: scroll;

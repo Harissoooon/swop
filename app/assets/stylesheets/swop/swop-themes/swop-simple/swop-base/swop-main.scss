@@ -1,7 +1,7 @@
 .main {
 
   @include media-breakpoint-up(xl) {
-    height: calc(100vh - 4px); // body border
+    height: 100vh;
     margin-left: -$spacer-1;
     margin-right: -$spacer-1;
     overflow-x: scroll;
