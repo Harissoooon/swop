@@ -1,33 +1,18 @@
 .sidebar {
-
-  @include media-breakpoint-up(xl) {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    gap: $spacer-1;
-    height: 100vh;
-    max-width: rem(192px);
-    min-width: rem(192px);
-    overflow-x: scroll;
-    padding-top: $spacer-7;
-    width: rem(192px);
-  }
-
-  &::-webkit-scrollbar {
-
-    @include media-breakpoint-up(xl) {
-      display: none;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  gap: $spacer-1;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
 
   .nav-link {
-
-    @include media-breakpoint-up(xl) {
-      border-radius: $md-border-radius;
-      color: $body-color;
-      padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
-    }
+    border-radius: $md-border-radius;
+    color: $body-color;
+    outline: 0;
+    padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
 
     &:hover {
 
@@ -38,12 +23,9 @@
     }
 
     &.active {
-
-      @include media-breakpoint-up(xl) {
-        background-color: $primary-color;
-        color: $white;
-        font-weight: $fw-semibold;
-      }
+      background-color: $primary-color;
+      color: $white;
+      font-weight: $fw-semibold;
     }
   }
 
@@ -57,6 +39,7 @@
 
   .btn-toggle-nav {
     padding: 0 !important;
+    margin-bottom: 0 !important;
   }
 
   // Hide default 'Navigation' btn-toggle

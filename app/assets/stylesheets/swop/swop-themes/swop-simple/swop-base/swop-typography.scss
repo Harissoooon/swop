@@ -17,7 +17,7 @@ p {
   }
 }
 
-ul:not([class]) {
+ul:not(.nav-tabs):not(.sidebar):not(.dropdown-menu) {
   margin-bottom: $spacer-3;
   padding-left: $spacer-4;
 

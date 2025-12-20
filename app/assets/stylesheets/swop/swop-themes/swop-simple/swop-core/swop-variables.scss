@@ -24,18 +24,18 @@ $md-font-size: $base-font-size * 0.875; // 14px
 $sm-font-size: $base-font-size * 0.75;  // 12px
 
 // buttons + forms
-$sm-inputs-btn-padding-y: $spacer * 2.5;  // 10px
-$sm-inputs-btn-padding-x: $spacer * 3.5;  // 14px
-$md-inputs-btn-padding-y: $spacer * 2.75; // 11px
-$md-inputs-btn-padding-x: $spacer * 4;    // 16px
 $lg-inputs-btn-padding-y: $spacer * 3;    // 12px
 $lg-inputs-btn-padding-x: $spacer * 4;    // 16px
+$md-inputs-btn-padding-y: $spacer * 2.75; // 11px
+$md-inputs-btn-padding-x: $spacer * 4;    // 16px
+$sm-inputs-btn-padding-y: $spacer * 2.5;  // 10px
+$sm-inputs-btn-padding-x: $spacer * 3.5;  // 14px
 
-$sm-inputs-btn-border-radius: $base-border-radius * 2;    // 8px
-$md-inputs-btn-border-radius: $base-border-radius * 2.25; // 9px
 $lg-inputs-btn-border-radius: $base-border-radius * 2.5;  // 10px
+$md-inputs-btn-border-radius: $base-border-radius * 2.25; // 9px
+$sm-inputs-btn-border-radius: $base-border-radius * 2;    // 8px
 
 // buttons
-$sm-btn-padding-x: $spacer * 5;   // 20px
-$md-btn-padding-x: $spacer * 5.5; // 22px
 $lg-btn-padding-x: $spacer * 6;   // 24px
+$md-btn-padding-x: $spacer * 5.5; // 22px
+$sm-btn-padding-x: $spacer * 5;   // 20px

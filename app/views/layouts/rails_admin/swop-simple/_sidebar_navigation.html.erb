@@ -1,8 +1,12 @@
-<ul class="sidebar nav">
-  <li class="nav-item nav-item-dashboard">
-    <a class="nav-link <%= 'active' if request.path == rails_admin.dashboard_path %>"href="<%= rails_admin.dashboard_path %>">Dashboard</a>
-  </li>
-  <%= main_navigation %>
-  <%= root_navigation %>
-  <%= static_navigation %>
-</ul>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-body">
+    <ul class="sidebar nav">
+      <li class="nav-item nav-item-dashboard">
+        <a class="nav-link <%= 'active' if request.path == rails_admin.dashboard_path %>"href="<%= rails_admin.dashboard_path %>">Dashboard</a>
+      </li>
+      <%= main_navigation %>
+      <%= root_navigation %>
+      <%= static_navigation %>
+    </ul>
+  </div>
+</div>
