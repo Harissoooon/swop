@@ -1,7 +1,4 @@
 #sidescroll + .row {
-  @extend .gy-0;
-  @extend .justify-content-center;
-  width: 100%;
 
   *[class*="col"] {
     flex: 0 0 auto;
@@ -9,12 +6,12 @@
   }
 
   .pagination {
-    gap: $spacer-1;
     margin-bottom: 0;
 
     .page-link {
-      padding: rem(12px 19.425px);
-      border-radius: $md-inputs-btn-border-radius;
+      font-size: $pagination-font-size;
+      padding: rem(11px 18.2625px);
+      border-radius: $sm-inputs-btn-border-radius;
     }
   }
 }
