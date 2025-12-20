@@ -6,15 +6,15 @@
     border-radius: 50%;
     color: darken($light-color, 28%);
     display: flex;
-    font-size: rem(32px);
-    height: rem(40px);
+    font-size: rem(26px);
+    height: rem(32px);
     justify-content: center;
     overflow: hidden;
-    width: rem(40px);
+    width: rem(32px);
 
     &-icon {
       position: relative;
-      top: rem(6px)
+      top: rem(5px);
     }
   }
 }

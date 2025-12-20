@@ -58,8 +58,9 @@
 
 // wrapper
 form .card {
+  display: none;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(md) {
     display: flex;
     flex-direction: column;
     margin-bottom: $spacer-5 !important;

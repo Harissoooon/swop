@@ -31,10 +31,7 @@
 
   // Fighting RailsAdmin
   li {
-
-    @include media-breakpoint-up(xl) {
-      margin-bottom: 0 !important;
-    }
+    margin-bottom: 0 !important;
   }
 
   .btn-toggle-nav {
@@ -44,16 +41,10 @@
 
   // Hide default 'Navigation' btn-toggle
   .nav-item-dashboard {
-
-    @include media-breakpoint-up(xl) {
-      margin-bottom: -$spacer-1 !important;
-    }
+    margin-bottom: -$spacer-1 !important;
 
     & + li .btn-toggle {
-
-      @include media-breakpoint-up(xl) {
-        display: none;
-      }
+      display: none;
     }
   }
 }
