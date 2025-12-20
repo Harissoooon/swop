@@ -22,19 +22,10 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
         <%= t('admin.misc.add_filter') %>
-        <b class="caret"></b>
       </a>
       <ul class="dropdown-menu dropdown-menu-end" id="filters">
         <% filterable_fields.each do |field| %>
-          <li>
-            <a
-              href="#"
-              class="dropdown-item"
-              data-options="<%= field.with(view: self).filter_options.to_json %>"
-            >
-              <%= field.label %>
-            </a>
-          </li>
+          <li><a href="#" class="dropdown-item" data-options="<%= field.with(view: self).filter_options.to_json %>"><%= field.label %></a></li>
         <% end %>
       </ul>
     </li>

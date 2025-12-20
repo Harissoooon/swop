@@ -11,4 +11,13 @@
   &-header {
     font-size: $md-font-size;
   }
+
+  &-toggle::after {
+    @extend .fas;
+    border: 0;
+    color: $body-secondary-color;
+    content: "\f107";
+    margin-left: $spacer-1;
+    vertical-align: unset;
+  }
 }

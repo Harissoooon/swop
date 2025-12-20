@@ -2,18 +2,16 @@
 
   &-tabs {
     align-items: center;
+    gap: $spacer-2;
     margin-bottom: $spacer-5 !important;
 
     @include media-breakpoint-up(md) {
+      gap: $spacer-3;
       margin-bottom: $spacer-6 !important;
     }
 
     .nav-item {
-      margin-right: $spacer-4;
-
-      @include media-breakpoint-up(md) {
-        margin-right: $spacer-5;
-      }
+      flex-shrink: 0;
 
       &.dropdown {
         display: none;
@@ -26,29 +24,53 @@
         }
 
         & + .nav-item.dropdown {
-          margin-left: $spacer-3;
-
-          @include media-breakpoint-up(md) {
-            margin-left: $spacer-4;
-          }
+          margin-left: 0;
         }
 
         .nav-link {
-          @extend .btn;
-          @extend .btn-body;
+          background: transparent;
+
+          &:hover {
+
+            @include media-breakpoint-up(xl) {
+              background-color: $light-color;
+            }
+          }
+
+          *[class*="fa"] {
+            display: inline-block;
+            margin-left: $spacer-1;
+            color: $body-secondary-color;
+          }
+
+          &.show {
+            background-color: $light-color;
+            color: $body-dark-color;
+          }
         }
       }
     }
 
     .nav-link {
-      border-left: none;
-      border-right: none;
-      border-top: none;
-      font-weight: $fw-semibold;
-      padding-bottom: $spacer-2;
-      padding-top: 0;
+      background: $light-color;
+      font-weight: $fw-medium;
+      border: 0 !important;
+      border-radius: $md-border-radius;
+      color: $body-color;
+      outline: 0;
+      padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
+
+      &:hover {
+
+        @include media-breakpoint-up(xl) {
+          background-color: $light-color;
+          color: $body-dark-color;
+        }
+      }
 
       &.active {
+        background-color: $primary-color;
+        color: $white;
         font-weight: $fw-semibold;
       }
 
@@ -57,12 +79,4 @@
       }
     }
   }
-}
-// miscellaneous
-nav[aria-label="breadcrumb"] {
-  display: none !important;
-}
-
-ol.breadcrumb {
-  display: none !important;
 }

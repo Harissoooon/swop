@@ -72,7 +72,7 @@ en:
         breadcrumb: "Dashboard"
       index:
         title: "%{model_label_plural}"
-        menu: "List"
+        menu: "%{model_label_plural}"
         breadcrumb: "%{model_label_plural}"
         no_records: "No records found"
       show:
@@ -83,7 +83,7 @@ en:
         menu: "Show in app"
       new:
         title: "New %{model_label}"
-        menu: "Add new"
+        menu: "New"
         breadcrumb: "New"
         link: "Add a new %{model_label}"
         done: "created"
