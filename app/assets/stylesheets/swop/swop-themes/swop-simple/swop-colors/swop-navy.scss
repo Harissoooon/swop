@@ -1,0 +1,46 @@
+$azure-blue: #0a84ff;     // private – primary
+$soggy-clay: #6e7284;     // private – secondary
+$jade-green: #0cca4a;     // private – success
+$electric-slide: #f549e6; // private – info
+$dark-orange: #f58f29;    // private – warning
+$strawberry: #f33339;     // private – danger
+$new-wave: #090e1b;       // private – light
+
+$ocean-police: #060a14; // privaet - body background
+
+$happy-salt: #d8e2f6; // private – text
+
+$perfect-slice: #0c1527; // private – border
+$new-breath: #141c32;    // private – inputs border
+
+$primary-color: $azure-blue;
+$secondary-color: $soggy-clay;
+$success-color: $jade-green;
+$info-color: $electric-slide;
+$warning-color: $dark-orange;
+$danger-color: $strawberry;
+$light-color: $new-wave;
+$dark-color: $white;
+
+$secondary-light-color: lighten($soggy-clay, 38%);
+$success-light-color: lighten($jade-green, 51%);
+$danger-light-color: lighten($strawberry, 38%);
+
+$body-bg: $ocean-police;
+
+$body-color: $happy-salt;
+$body-secondary-color: $soggy-clay;
+$body-dark-color: $white;
+
+$borders-color: $perfect-slice;
+
+$inputs-border-color: $new-breath;
+
+// miscellaneous
+$avatar-bg-color: lighten($light-color, 8%);
+$avatar-color: lighten($light-color, 24%);
+
+$nav-link-hover-bg: lighten($light-color, 2%);
+
+$btn-body-hover-border: lighten($inputs-border-color, 4%);
+$btn-body-active-border: lighten($inputs-border-color, 2%);
