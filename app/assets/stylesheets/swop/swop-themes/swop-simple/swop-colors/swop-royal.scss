@@ -1,40 +1,40 @@
 $azure-blue: #0a84ff;     // private – primary
-$alabaster: #707480;      // private – secondary
+$soggy-clay: #6e7284;     // private – secondary
 $jade-green: #0cca4a;     // private – success
 $electric-slide: #f549e6; // private – info
 $dark-orange: #f58f29;    // private – warning
 $strawberry: #f33339;     // private – danger
-$sweet-dark: #0b0d11;     // private – light
+$new-wave: #090e1b;       // private – light
 
-$bullet-metal: #04080c; // private - body background
+$ocean-police: #060a14; // private - body background
 
-$snow-blue: #e0e8f4; // private – text
+$happy-salt: #d8e2f6; // private – text
 
-$scary-black: #14181c;   // private – border
-$friendly-dark: #1a1e22; // private – inputs border
+$perfect-slice: #0c1527; // private – border
+$new-breath: #141c32;    // private – inputs border
 
 $primary-color: $azure-blue;
-$secondary-color: $alabaster;
+$secondary-color: $soggy-clay;
 $success-color: $jade-green;
 $info-color: $electric-slide;
 $warning-color: $dark-orange;
 $danger-color: $strawberry;
-$light-color: $sweet-dark;
+$light-color: $new-wave;
 $dark-color: $white;
 
-$secondary-light-color: lighten($alabaster, 38%);
+$secondary-light-color: lighten($soggy-clay, 38%);
 $success-light-color: lighten($jade-green, 51%);
 $danger-light-color: lighten($strawberry, 38%);
 
-$body-bg: $bullet-metal;
+$body-bg: $ocean-police;
 
-$body-color: $snow-blue;
-$body-secondary-color: $alabaster;
+$body-color: $happy-salt;
+$body-secondary-color: $soggy-clay;
 $body-dark-color: $white;
 
-$borders-color: $scary-black;
+$borders-color: $perfect-slice;
 
-$inputs-border-color: $friendly-dark;
+$inputs-border-color: $new-breath;
 
 // miscellaneous
 $avatar-bg-color: lighten($light-color, 8%);
