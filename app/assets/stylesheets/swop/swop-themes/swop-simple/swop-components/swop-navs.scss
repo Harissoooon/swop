@@ -33,7 +33,7 @@
           &:hover {
 
             @include media-breakpoint-up(xl) {
-              background-color: $light-color;
+              background-color: $nav-link-hover-bg;
             }
           }
 
@@ -44,7 +44,7 @@
           }
 
           &.show {
-            background-color: $light-color;
+            background-color: $nav-link-hover-bg;
             color: $body-dark-color;
           }
         }
@@ -52,7 +52,7 @@
     }
 
     .nav-link {
-      background: $light-color;
+      background: $nav-link-hover-bg;
       font-weight: $fw-medium;
       border: 0 !important;
       border-radius: $md-border-radius;
@@ -63,7 +63,7 @@
       &:hover {
 
         @include media-breakpoint-up(xl) {
-          background-color: $light-color;
+          background-color: $nav-link-hover-bg;
           color: $body-dark-color;
         }
       }

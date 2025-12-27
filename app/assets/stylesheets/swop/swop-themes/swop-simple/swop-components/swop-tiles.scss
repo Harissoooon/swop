@@ -2,9 +2,9 @@
 
   &-avatar {
     align-items: center;
-    background-color: darken($light-color, 2%);
+    background-color: $avatar-bg-color;
     border-radius: 50%;
-    color: darken($light-color, 28%);
+    color: $avatar-color;
     display: flex;
     font-size: rem(26px);
     height: rem(32px);

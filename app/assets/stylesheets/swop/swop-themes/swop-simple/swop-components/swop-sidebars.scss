@@ -17,7 +17,7 @@
     &:hover {
 
       @include media-breakpoint-up(xl) {
-        background-color: $light-color;
+        background-color: $nav-link-hover-bg;
         color: $body-dark-color;
       }
     }

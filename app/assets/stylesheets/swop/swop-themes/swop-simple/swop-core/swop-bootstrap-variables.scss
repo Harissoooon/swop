@@ -70,6 +70,8 @@ $nav-tabs-link-active-border-color: $primary-color;
 $dropdown-min-width: rem(160px);
 $dropdown-padding-y: $spacer-1;
 $dropdown-spacer: $spacer-1;
+$dropdown-color: $body-color;
+$dropdown-bg: $body-bg;
 $dropdown-border-color: $borders-color;
 $dropdown-border-radius: $md-border-radius;
 $dropdown-divider-margin-y: $spacer-1;
@@ -123,7 +125,8 @@ $offcanvas-padding-y: $spacer-4;
 $offcanvas-padding-x: $spacer-4;
 $offcanvas-horizontal-width: rem(256px);
 $offcanvas-border-width: 0;
-$offcanvas-backdrop-bg: $dark-color;
+$offcanvas-bg-color: $body-bg;
+$offcanvas-backdrop-bg: $black;
 $offcanvas-backdrop-opacity: 0.5;
 
 // cards
