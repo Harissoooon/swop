@@ -38,14 +38,4 @@
       padding-top: $spacer-6;
     }
   }
-
-  .main {
-    margin: 0 !important;
-    overflow-x: hidden !important;
-    padding: 0 !important;
-
-    &::after {
-      content: none;
-    }
-  }
 }

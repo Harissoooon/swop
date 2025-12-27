@@ -10,9 +10,10 @@
   &-actions {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: $spacer-3;
-    margin-top: $spacer-4 !important;
     margin-bottom: 0 !important;
+    margin-top: $spacer-4 !important;
 
     @include media-breakpoint-up(md) {
       gap: $spacer-4;
@@ -44,20 +45,4 @@
       }
     }
   }
-}
-
-form.main {
-  // height: auto !important;
-  // margin-bottom: -$spacer-1 !important;
-  // margin-left: 0 !important;
-  // margin-right: 0 !important;
-  // margin-top: 0 !important;
-  // overflow-x: auto !important;
-  // padding-bottom: $spacer-1 !important;
-  // padding-left: 0 !important;
-  // padding-right: 0 !important;
-  // padding-top: 0 !important;
-  margin: 0 !important;
-  overflow-x: hidden !important;
-  padding: 0 !important;
 }

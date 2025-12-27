@@ -1,0 +1,5 @@
+<% if Swop.configuration.theme_style == :simple %>
+  <%= render partial: "rails_admin/main/swop-simple/new" %>
+<% else %>
+  <%= render partial: "rails_admin/main/default/new" %>
+<% end %>
