@@ -1,4 +1,4 @@
-<ul>
+<ul class="lead">
   <% @abstract_model.each_associated_children(object) do |association, children| %>
     <% humanized_association = @abstract_model.model.human_attribute_name association.name %>
     <% limit = children.count > 12 ? 10 : children.count %>

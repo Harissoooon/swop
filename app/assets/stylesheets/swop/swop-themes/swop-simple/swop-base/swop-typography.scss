@@ -1,27 +1,4 @@
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: $spacer-3 !important; // override RailsAdmin
-  }
-}
-
-p {
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: $spacer-4 !important; // override RailsAdmin
-  }
-}
-
 ul:not(.nav-tabs):not(.sidebar):not(.dropdown-menu) {
-  margin-bottom: $spacer-3;
+  margin-bottom: $spacer-4;
   padding-left: $spacer-4;
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: $spacer-4;
-  }
 }

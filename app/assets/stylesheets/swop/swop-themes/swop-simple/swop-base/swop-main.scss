@@ -7,6 +7,8 @@
   padding-top: $spacer-6;
 
   @include media-breakpoint-up(md) {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     overflow-x: scroll;
     padding-bottom: $spacer-8;
@@ -28,11 +30,22 @@
     display: flex;
     font-size: $sm-font-size;
     justify-self: center;
-    margin-top: $spacer-5;
+    margin-top: auto;
+    padding-top: $spacer-5;
     text-align: center;
 
     @include media-breakpoint-up(md) {
-      margin-top: $spacer-6;
+      padding-top: $spacer-6;
+    }
+  }
+
+  .main {
+    margin: 0 !important;
+    overflow-x: hidden !important;
+    padding: 0 !important;
+
+    &::after {
+      content: none;
     }
   }
 }

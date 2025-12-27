@@ -15,9 +15,7 @@
       <div class="tile-avatar flex-shrink-0"><i class="fa-solid fa-user tile-avatar-icon"></i></div>
     </button>
     <ul class="dropdown-menu dropdown-menu-end">
-      <% if Rails.application.class.module_parent_name %>
-        <li class="dropdown-header"><%= Rails.application.class.module_parent_name %></li>
-      <% end %>
+      <li class="dropdown-header"><%= _get_plugin_name[0] || 'Rails' %></li>
       <% if _current_user&.id && RailsAdmin::Config.models.any? { |c| c.abstract_model.model == _current_user.class } %>
         <li><%= link_to "My account", rails_admin.edit_path(model_name: _current_user.class.name.underscore.tr('/', '~'), id: _current_user.id), class: "dropdown-item" %></li>
       <% end %>
