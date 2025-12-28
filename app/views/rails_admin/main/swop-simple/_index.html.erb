@@ -44,28 +44,22 @@
 
 <div id="list">
   <%= form_tag(index_path(params.except(*%w[page f query])), method: :get) do %>
-    <div class="card mb-3 p-3 bg-light">
-      <div class="row" data-options="<%= ordered_filter_options.to_json %>" id="filters_box"></div>
-      <hr class="filters_box" style="display:<%= ordered_filters.empty? ? 'none' : 'block' %>"/>
-      <div class="row">
-        <div class="col-sm-6">
+    <div class="filters filters-wrapper">
+      <div class="filters-box" data-options="<%= ordered_filter_options.to_json %>" id="filters_box"></div>
+      <div class="row justify-content-between gy-0">
+        <div class="col-6">
           <div class="input-group">
             <input class="form-control" name="query" placeholder="<%= t("admin.misc.filter") %>" type="search" value="<%= query %>" />
-            <button class="btn btn-primary" data-disable-with="<%= '<i class="fas fa-sync"></i>' + t('admin.misc.refresh') %>" type="submit">
-              <i class="fas fa-sync"></i>
-              <%= t('admin.misc.refresh') %>
-            </button>
-            <button class="btn btn-info" id="remove_filter" title="<%= t('admin.misc.reset_filters') %>">
-              <i class="fas fa-times"></i>
-            </button>
+            <button class="btn btn-body" data-disable-with="<%= '<i class="fas fa-sync"></i>' + t('admin.misc.refresh') %>" type="submit"><i class="fas fa-sync"></i><%= t('admin.misc.refresh') %>
+            <button class="btn btn-body" id="remove_filter" title="<%= t('admin.misc.reset_filters') %>"><i class="fas fa-times"></i></button>
           </div>
           <% if @model_config.list.search_help.present? %>
             <div class="form-text"><%= @model_config.list.search_help %></div>
           <% end %>
         </div>
-        <div class="col-sm-6 text-end">
+        <div class="col-auto">
           <% if export_action %>
-            <%= link_to wording_for(:link, export_action), export_path(params.except('page')), class: 'btn btn-info' %>
+            <%= link_to wording_for(:link, export_action), export_path(params.except('page')), class: 'btn btn-body' %>
           <% end %>
         </div>
       </div>

@@ -1,70 +1,57 @@
-.filter {
-  display: flex !important;
-  font-size: 0 !important;
-  margin-bottom: $spacer-3 !important;
-  margin-top: 0 !important;
+.filters {
 
-  .btn {
-    @extend .btn-body;
-    align-items: center;
-    display: flex;
-    flex-shrink: 0;
-    margin-left: $spacer-3;
-    max-width: rem(192px);
-    order: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  &-wrapper {
+    display: none;
 
-    *[class*="fa"] {
-      margin-left: $spacer-2 !important;
-      order: 1 !important;
+    @include media-breakpoint-up(md) {
+      background-color: $light-color;
+      border-radius: $lg-border-radius;
+      display: flex;
+      flex-direction: column;
+      gap: $spacer-3;
+      margin-bottom: $spacer-4;
+      padding: $spacer-5;
     }
   }
 
-  .additional-fieldset,
-  .form-control {
-    flex-grow: 1;
-    width: 100% !important;
-  }
-
-  .additional-fieldset:not(.form-control) {
-    margin-right: $spacer-3 !important;
-  }
-
-  .form-control + .form-control {
-    margin-left: $spacer-3;
-  }
-}
-
-// invisible hr
-.filters_box {
-  border-color: transparent;
-  margin-bottom: $spacer-1;
-
-  // main filter row
-  & + .row {
-    @extend .align-items-center;
-    width: unset !important;
-
-    .input-group > .form-control + .btn-primary *[class*="fa"] {
-      display: none;
-    }
-
-    .btn-info {
-      @extend .btn-primary;
-    }
-  }
-}
-
-// wrapper
-form .card {
-  display: none;
-
-  @include media-breakpoint-up(md) {
+  &-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: $spacer-5 !important;
-    padding: $spacer-6 !important;
+    gap: $spacer-2;
+
+    &:empty {
+      margin-bottom: -$spacer-3;
+    }
+  }
+
+  .filter {
+    align-items: center;
+    display: flex !important;
+    font-size: 0;
+    gap: $spacer-1;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+
+    .form-control,
+    .form-select,
+    .additional-fieldset,
+    .additional-fieldset .input-sm {
+      flex-grow: 1;
+      width: 100% !important;
+    }
+
+    .btn {
+      @extend .btn-body;
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      margin-left: $spacer-1;
+      order: 1;
+
+      *[class*="fa"] {
+        margin-left: $spacer-2 !important;
+        order: 1 !important;
+      }
+    }
   }
 }
