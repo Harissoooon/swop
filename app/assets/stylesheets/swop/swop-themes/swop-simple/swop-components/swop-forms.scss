@@ -30,8 +30,129 @@
       gap: $spacer-4;
     }
 
+    &.row {
+      flex-basis: 100%;
+      justify-content: start !important;
+    }
+
     .extra_buttons .btn-primary {
       @extend .btn-body;
+    }
+  }
+}
+
+// simplest way to make labels + inputs stack
+.control-group {
+  margin-bottom: $spacer-4 !important;
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.col-form-label {
+  flex-basis: 100%;
+  padding-bottom: $form-label-margin-bottom;
+  padding-top: 0;
+  text-align: left !important;
+}
+
+.controls {
+
+  &[class*="col-sm"] {
+    flex-basis: 100%;
+  }
+
+  &[class*="ui-sortable"] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacer-3;
+
+    .toggle {
+      margin-bottom: 0 !important;
+      position: relative;
+
+      .btn {
+        @extend .btn-danger;
+        align-items: center;
+        border-radius: $base-border-radius * 1.75; // 7px
+        bottom: $spacer-2;
+        display: flex;
+        font-size: 0;
+        height: rem(36.25px);
+        justify-content: center;
+        padding: 0;
+        position: absolute;
+        right: $spacer-2;
+        width: rem(36.25px);
+
+        &::after {
+          @extend .fas;
+          content: "\f1f8";
+          font-size: $base-font-size * 0.625; // 10px
+        }
+      }
+    }
+
+    input,
+    .form-text {
+      flex-basis: 100%;
+    }
+
+    input {
+      padding-top: $spacer-1;
+    }
+
+    .form-text {
+      margin-top: -$spacer-2;
+    }
+  }
+
+  .row {
+
+    *[class*="col-"] {
+      flex: 1 0 0% !important;
+      width: 100% !important;
+    }
+
+    *[class*="modal-actions"] {
+      align-items: start;
+      display: flex;
+      flex: 0 0 auto !important;
+      gap: $spacer-3;
+      margin-top: $spacer-3 !important;
+      width: 100% !important;
+
+      @include media-breakpoint-up(md) {
+        width: auto !important;
+        margin-top: 0 !important;
+      }
+
+      .btn {
+        @extend .btn-body;
+        flex-grow: 1;
+        margin-left: 0 !important;
+      }
+    }
+
+    .ra-multiselect {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: $spacer-3;
+
+      &-header {
+        flex-basis: 100%;
+        margin-bottom: $spacer-3;
+
+        input {
+          width: 100%;
+        }
+      }
+
+      &-column:not(.ra-multiselect-center) {
+        flex-grow: 1;
+      }
     }
   }
 }

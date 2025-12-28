@@ -48,9 +48,9 @@
       $active-background: $body-bg,
       $active-border: $btn-body-active-border,
       $active-color: $body-dark-color,
-      $disabled-background: $black,
+      $disabled-background: $body-bg,
       $disabled-border: $inputs-border-color,
-      $disabled-color: $body-color
+      $disabled-color: $body-secondary-color
     );
   }
 
