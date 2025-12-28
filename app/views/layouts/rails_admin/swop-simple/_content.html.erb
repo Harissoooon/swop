@@ -27,14 +27,13 @@
     <i class="fa-solid fa-bars"></i>
   </button>
 </header>
-<% flash && flash.each do |key, value| %>
-  <div class="<%= flash_alert_class(key) %> alert alert-dismissible">
-    <%= value %>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-<% end %>
 <ul class="nav nav-tabs">
   <%= menu_for((@abstract_model ? (@object.try(:persisted?) ? :member : :collection) : :root), @abstract_model, @object) %>
   <%= content_for :contextual_tabs %>
 </ul>
+<% flash && flash.each do |key, value| %>
+  <div class="<%= flash_alert_class(key) %> alert">
+    <%= value %>
+  </div>
+<% end %>
 <%= yield %>

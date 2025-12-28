@@ -3,7 +3,7 @@
   &-tabs {
     align-items: center;
     gap: $spacer-3;
-    margin-bottom: $spacer-7 !important;
+    margin-bottom: $spacer-6 !important;
 
     .nav-item {
       flex-shrink: 0;
@@ -28,7 +28,7 @@
           &:hover {
 
             @include media-breakpoint-up(md) {
-              background-color: $nav-link-hover-bg;
+              background-color: $light-color;
             }
           }
 
@@ -39,7 +39,7 @@
           }
 
           &.show {
-            background-color: $nav-link-hover-bg;
+            background-color: $light-color;
             color: $body-dark-color;
           }
         }
@@ -47,7 +47,7 @@
     }
 
     .nav-link {
-      background: $nav-link-hover-bg;
+      background: $light-color;
       border-radius: $md-border-radius;
       border: 0 !important;
       color: $body-color;
@@ -58,7 +58,7 @@
       &:hover {
 
         @include media-breakpoint-up(md) {
-          background-color: $nav-link-hover-bg;
+          background-color: $light-color;
           color: $body-dark-color;
         }
       }

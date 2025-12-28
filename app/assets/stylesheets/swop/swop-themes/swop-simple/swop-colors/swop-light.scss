@@ -1,47 +1,31 @@
-$azure-blue: #0a84ff;     // private – primary
-$rosy-granite: #909098;   // private – secondary
-$jade-green: #00d050;     // private – success
-$electric-slide: #e060ff; // private – info
-$dark-orange: #ffb020;    // private – warning
-$strawberry: #ff3430;     // private – danger
-$bright-snow: #f9f9fb;    // private – light
-$carbon-black: #202024;   // private – dark
+$primary-color: #0a84ff;
+$secondary-color: #909098;
+$success-color: #00d050;
+$info-color: #e060ff;
+$warning-color: #ffb020;
+$danger-color: #ff3430;
+$light-color: #f9f9fb;
+$dark-color: #202024;
 
-$gun-metal: #484850; // private – text
-
-$platinum: #f6f6fA;  // private – border
-$alabaster: #ececf2; // private – inputs border
-
-$primary-color: $azure-blue;
-$secondary-color: $rosy-granite;
-$success-color: $jade-green;
-$info-color: $electric-slide;
-$warning-color: $dark-orange;
-$danger-color: $strawberry;
-$light-color: $bright-snow;
-$dark-color: $carbon-black;
-
-$secondary-light-color: desaturate(lighten($rosy-granite, 36%), 24%);
-$success-light-color: desaturate(lighten($jade-green, 50%), 24%);
-$danger-light-color: desaturate(lighten($strawberry, 37%), 24%);
+$secondary-light-color: desaturate(lighten($secondary-color, 38%), 24%);
+$success-light-color: desaturate(lighten($success-color, 54%), 24%);
+$danger-light-color: desaturate(lighten($danger-color, 38%), 24%);
 
 $box-shadow-color: $dark-color;
 
 $body-bg: $white;
 
-$body-color: $gun-metal;
-$body-secondary-color: $rosy-granite;
-$body-dark-color: $carbon-black;
+$body-color: #505058;
+$body-secondary-color: $secondary-color;
+$body-dark-color: $dark-color;
 
-$borders-color: $platinum;
+$borders-color: #f6f6fa;
 
-$inputs-border-color: $alabaster;
+$inputs-border-color: #ececf2;
 
 // miscellaneous
 $avatar-bg-color: desaturate(darken($light-color, 4%), 12%);
 $avatar-color: desaturate(darken($light-color, 32%), 12%);
-
-$nav-link-hover-bg: $light-color;
 
 $btn-body-hover-border: darken($inputs-border-color, 3%);
 $btn-body-active-border: darken($inputs-border-color, 1.5%);
