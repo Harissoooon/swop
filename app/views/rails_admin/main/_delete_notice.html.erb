@@ -1,6 +1,6 @@
 <% object = delete_notice %>
 
-<% if Swop.configuration.theme_style == :simple %>
+<% if Swop.configuration.style == :simple %>
   <%= render partial: "rails_admin/main/swop-simple/delete_notice", locals: { object: object } %>
 <% else %>
   <%= render partial: "rails_admin/main/default/delete_notice", locals: { object: object } %>

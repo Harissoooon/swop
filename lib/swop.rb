@@ -17,12 +17,12 @@ module Swop
   end
 
   class Configuration
-    attr_accessor :theme_style
-    attr_accessor :theme_color
+    attr_accessor :style
+    attr_accessor :color
 
     def initialize
-      @theme_style = :simple
-      @theme_color = :light
+      @style = :simple
+      @color = :light
     end
   end
 end

@@ -1,4 +1,4 @@
-<% if Swop.configuration.theme_style == :simple %>
+<% if Swop.configuration.style == :simple %>
   <%= render partial: "kaminari/ra-twitter-bootstrap/swop-simple/prev_page", locals: { current_page: current_page, url: url } %>
 <% else %>
   <%= render partial: "kaminari/ra-twitter-bootstrap/default/prev_page", locals: { current_page: current_page, url: url } %>

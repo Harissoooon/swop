@@ -1,0 +1,5 @@
+<% if Swop.configuration.style == :simple %>
+  <%= render partial: "rails_admin/main/swop-simple/history" %>
+<% else %>
+  <%= render partial: "rails_admin/main/default/history" %>
+<% end %>
