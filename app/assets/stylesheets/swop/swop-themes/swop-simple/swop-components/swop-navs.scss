@@ -2,13 +2,8 @@
 
   &-tabs {
     align-items: center;
-    gap: $spacer-2;
+    gap: $spacer-3;
     margin-bottom: $spacer-5 !important;
-
-    @include media-breakpoint-up(md) {
-      gap: $spacer-3;
-      margin-bottom: $spacer-6 !important;
-    }
 
     .nav-item {
       flex-shrink: 0;
@@ -32,15 +27,15 @@
 
           &:hover {
 
-            @include media-breakpoint-up(xl) {
+            @include media-breakpoint-up(md) {
               background-color: $nav-link-hover-bg;
             }
           }
 
           *[class*="fa"] {
+            color: $body-secondary-color;
             display: inline-block;
             margin-left: $spacer-1;
-            color: $body-secondary-color;
           }
 
           &.show {
@@ -53,16 +48,16 @@
 
     .nav-link {
       background: $nav-link-hover-bg;
-      font-weight: $fw-medium;
-      border: 0 !important;
       border-radius: $md-border-radius;
+      border: 0 !important;
       color: $body-color;
+      font-weight: $fw-medium;
       outline: 0;
       padding: ($spacer * 1.5) ($spacer * 4); // 6px 16px
 
       &:hover {
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(md) {
           background-color: $nav-link-hover-bg;
           color: $body-dark-color;
         }

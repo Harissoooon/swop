@@ -6,6 +6,7 @@
     max-width: 100%;
     padding: 0;
 
+    // smaller thumbnails in rows
     td & {
       border-radius: $sm-border-radius;
       height: rem(40px);
@@ -13,6 +14,7 @@
   }
 }
 
+// only show first image in rows
 td.attachments_field.multiple_active_storage_type a:not(:first-child) {
   display: none;
 }

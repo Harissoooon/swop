@@ -25,6 +25,7 @@
   .additional-fieldset,
   .form-control {
     flex-grow: 1;
+    width: 100% !important;
   }
 
   .additional-fieldset:not(.form-control) {

@@ -1,0 +1,11 @@
+.text-hover-underline {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.fw-semibold {
+  font-weight: $fw-semibold !important;
+}

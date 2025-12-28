@@ -62,7 +62,6 @@
     @extend .btn-body;
   }
 
-  // Sidebar
   &-toggle {
     align-items: start !important;
     border-radius: $md-border-radius;
@@ -91,7 +90,6 @@
     }
   }
 
-  // current user
   &-current-user {
     align-items: center;
     background-color: transparent;
@@ -105,8 +103,8 @@
     padding: 0;
 
     @include media-breakpoint-up(lg) {
-      margin-top: 0;
       margin-bottom: 0;
+      margin-top: 0;
     }
 
     &:focus {
@@ -122,14 +120,14 @@
     }
   }
 
-  // Remove FA icons
+  // remove Font Awesome icons
   &.create,
   &.update,
   &.btn-remove-image,
   &[type="submit"] {
 
     *[class*="fa"] {
-      display: none;
+      display: none !important;
     }
   }
 }

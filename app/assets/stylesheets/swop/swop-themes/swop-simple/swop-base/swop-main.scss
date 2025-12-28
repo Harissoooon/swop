@@ -22,20 +22,4 @@
       display: none;
     }
   }
-
-  &::after {
-    align-self: center;
-    color: rgba($body-secondary-color, 0.75);
-    content: "Designed by Swop";
-    display: flex;
-    font-size: $sm-font-size;
-    justify-self: center;
-    margin-top: auto;
-    padding-top: $spacer-5;
-    text-align: center;
-
-    @include media-breakpoint-up(md) {
-      padding-top: $spacer-6;
-    }
-  }
 }

@@ -2,8 +2,8 @@
 <% visible_fields = @model_config.export.with(view: self, object: @abstract_model.model.new, controller: self.controller).visible_fields %>
 <%= form_tag export_path(params.merge(all: true)), method: 'post', class: "", data: {turbo: false} do %>
   <input name="send_data" type="hidden" value="true" />
-  <fieldset id="fields_to_export" class="mb-5 mb-md-6">
-    <div class="checkbox mb-4 mb-md-5">
+  <fieldset id="fields_to_export" class="mb-6">
+    <div class="checkbox mb-5">
       <label for="check_all">
         <%= check_box_tag 'all', 'all', true, { id: 'check_all' } %>
         <b>
@@ -11,7 +11,7 @@
         </b>
       </label>
     </div>
-    <div class="control-group mb-5 mb-md-6">
+    <div class="control-group mb-6">
       <h2><%= t('admin.export.fields_from', name: @model_config.label_plural.downcase) %></h2>
       <div class="controls">
         <div class="row gy-1">
@@ -41,7 +41,7 @@
     </div>
     <% visible_fields.select{ |f| f.association? && !f.association.polymorphic? }.each do |field| %>
       <% fields = field.associated_model_config.export.with(controller: self.controller, view: self, object: (associated_model = field.associated_model_config.abstract_model.model).new).visible_fields.select{ |f| !f.association? } %>
-      <div class="control-group mb-5 mb-md-6">
+      <div class="control-group mb-6">
         <h2><%= t('admin.export.fields_from_associated', name: field.label.downcase) %></h2>
         <div class="controls">
           <div class="row gy-1">
@@ -61,13 +61,13 @@
   </fieldset>
   <fieldset>
     <h2><%= t('admin.export.options_for', name: 'csv') %></h2>
-    <div class="control-group mb-4 mb-md-5">
+    <div class="control-group mb-5">
       <% guessed_encoding = @abstract_model.encoding %>
       <label for="csv_options_encoding_to"><%= t('admin.export.csv.encoding_to') %></label>
       <%= select_tag 'csv_options[encoding_to]', options_for_select(Encoding.name_list.sort), include_blank: true, placeholder: t('admin.misc.search'), :'data-enumeration' => true %>
       <p class="form-text"><%= t('admin.export.csv.encoding_to_help', name: guessed_encoding) %></p>
     </div>
-    <div class="control-group mb-4 mb-md-5">
+    <div class="control-group mb-5">
       <label>
         <%= check_box_tag 'csv_options[skip_header]', 'true' %>
         <%= t('admin.export.csv.skip_header') %>

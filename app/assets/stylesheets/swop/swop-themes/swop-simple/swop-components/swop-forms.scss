@@ -11,38 +11,21 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: $spacer-3;
+    gap: $spacer-4;
     margin-bottom: 0 !important;
-    margin-top: $spacer-4 !important;
+    margin-top: $spacer-5 !important;
 
-    @include media-breakpoint-up(md) {
-      gap: $spacer-4;
-      margin-top: $spacer-5 !important;
-    }
-
-    *[class*="col"] {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: $spacer-3;
-
-      @include media-breakpoint-up(md) {
-        gap: $spacer-4;
-      }
-    }
-
+    &,
+    *[class*="col"],
     .extra_buttons {
       display: flex;
       flex-direction: row;
-      gap: $spacer-3;
+      flex-wrap: wrap;
+      gap: $spacer-4;
+    }
 
-      @include media-breakpoint-up(md) {
-        gap: $spacer-4;
-      }
-
-      .btn-primary {
-        @extend .btn-body;
-      }
+    .extra_buttons .btn-primary {
+      @extend .btn-body;
     }
   }
 }

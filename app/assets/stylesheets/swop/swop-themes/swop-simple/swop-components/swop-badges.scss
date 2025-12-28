@@ -22,7 +22,7 @@
     background-color: $danger-light-color !important;
   }
 
-  // Smaller badges for tables
+  // smaller badges in rows
   td & {
     border-radius: $sm-border-radius;
     height: rem(24px);

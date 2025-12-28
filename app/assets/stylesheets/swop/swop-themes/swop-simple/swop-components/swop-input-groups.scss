@@ -7,12 +7,12 @@
   }
 
   &-btn .btn {
-    border-top-left-radius: inherit !important;
     border-bottom-left-radius: inherit !important;
+    border-top-left-radius: inherit !important;
   }
 
   .form-control {
-    border-top-left-radius: $md-inputs-btn-border-radius !important;
     border-bottom-left-radius: $md-inputs-btn-border-radius !important;
+    border-top-left-radius: $md-inputs-btn-border-radius !important;
   }
 }

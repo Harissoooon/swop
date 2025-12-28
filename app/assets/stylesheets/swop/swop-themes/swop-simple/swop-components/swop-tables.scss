@@ -1,7 +1,7 @@
 .table {
 
   th {
-    padding-bottom: 10px !important;
+    padding-bottom: rem(10px) !important;
     padding-left: $table-cell-padding-x !important;
     padding-right: $table-cell-padding-x !important;
     padding-top: 0 !important;
@@ -12,7 +12,7 @@
   }
 
   th.shrink {
-    padding-bottom: 8px !important;
+    padding-bottom: rem(8px) !important;
   }
 
   th.header {

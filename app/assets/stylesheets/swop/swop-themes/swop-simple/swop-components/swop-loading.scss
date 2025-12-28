@@ -1,6 +1,6 @@
 .loading {
   align-items: center;
-  background-color: rgba($black, 0.25);
+  background-color: $overlay-bg;
   color: $white;
   display: flex;
   font-size: $h1-font-size;

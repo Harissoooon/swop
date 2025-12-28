@@ -9,17 +9,13 @@
     margin-bottom: 0;
 
     .page-link {
+      border-radius: $sm-inputs-btn-border-radius;
       font-size: $pagination-font-size;
       padding: rem(11px 18.2625px);
-      border-radius: $sm-inputs-btn-border-radius;
     }
   }
 }
 
 #sidescroll {
-  margin-bottom: $spacer-5 !important;
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: $spacer-6 !important;
-  }
+  margin-bottom: $spacer-6 !important;
 }
