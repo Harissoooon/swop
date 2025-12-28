@@ -19,3 +19,13 @@
 td.attachments_field.multiple_active_storage_type a:not(:first-child) {
   display: none;
 }
+
+.multiple_active_storage_type.attachments_field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacer-3;
+
+  :not(a):not(p) {
+    flex-basis: 100%;
+  }
+}

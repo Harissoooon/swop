@@ -7,9 +7,9 @@
           <p><%= fieldset.help %></p>
         <% end %>
         <% fields.each_with_index do |field, index| %>
-          <div class="<%= field.type_css_class %> <%= field.css_class %> mb-4">
+          <div class="lead <%= field.type_css_class %> <%= field.css_class %> <%= "mb-4" unless field == fields.last %>">
             <h3 class="h6 mb-1"><%= field.label %></h3>
-            <p class="lead mb-0"><%= field.pretty_value %></p>
+            <%= field.pretty_value %></p>
           </div>
         <% end %>
       </div>

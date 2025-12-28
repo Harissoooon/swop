@@ -114,10 +114,19 @@ $pagination-disabled-bg: transparent;
 
 $pagination-transition: color .0s ease-in-out, background-color .0s ease-in-out, box-shadow .0s ease-in-out;
 
+// alerts
+$alert-padding-y: $spacer-3;
+$alert-padding-x: $spacer-4;
+$alert-margin-bottom: $spacer-4;
+$alert-border-radius: $md-border-radius;
+$alert-link-font-weight: $fw-semibold;
+$alert-border-width: 0;
+$alert-dismissible-padding-r: $alert-padding-x * 3;
+
 // progress bars
 $progress-height: rem(14px);
 $progress-font-size: $sm-font-size;
-$progress-bg: $border-color;
+$progress-bg: $light-color;
 $progress-border-radius: $lg-border-radius;
 
 // offcanvas
