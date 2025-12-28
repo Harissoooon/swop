@@ -2,36 +2,32 @@
 <% visible_fields = @model_config.export.with(view: self, object: @abstract_model.model.new, controller: self.controller).visible_fields %>
 <%= form_tag export_path(params.merge(all: true)), method: 'post', class: "", data: {turbo: false} do %>
   <input name="send_data" type="hidden" value="true" />
-  <fieldset id="fields_to_export" class="mb-7">
-    <div class="checkbox mb-6">
-      <label for="check_all">
-        <%= check_box_tag 'all', 'all', true, { id: 'check_all' } %>
-        <b>
-          <%= t('admin.export.select_all_fields') %>
-        </b>
-      </label>
-    </div>
-    <div class="control-group mb-7">
+  <fieldset id="fields_to_export">
+    <label class="form-check checkbox" for="check_all">
+      <%= check_box_tag 'all', 'all', true, { class: "form-check-input", id: 'check_all' } %>
+      <span class="form-check-label" for="check_all"><%= t('admin.export.select_all_fields') %></span>
+    </label>
+    <div class="control-group mt-5">
       <h2><%= t('admin.export.fields_from', name: @model_config.label_plural.downcase) %></h2>
       <div class="controls">
-        <div class="row gy-1">
+        <div class="row gy-2">
           <% visible_fields.select{ |f| !f.association? || f.association.polymorphic? }.each do |field| %>
             <% list = field.virtual? ? 'methods' : 'only' %>
             <div class="checkbox col-sm-3">
               <% if field.association? && field.association.polymorphic? %>
-                <label for="schema_<%= list %>_<%= field.method_name %>">
-                  <%= check_box_tag "schema[#{list}][]", field.method_name, true, { id: "schema_#{list}_#{field.method_name}" } %>
-                  <%= field.label + " [id]" %>
+                <label class="form-check" for="schema_<%= list %>_<%= field.method_name %>">
+                  <%= check_box_tag "schema[#{list}][]", field.method_name, true, { class: "form-check-input", id: "schema_#{list}_#{field.method_name}" } %>
+                  <span class="form-check-label"><%= field.label + " [id]" %></span>
                 </label>
                 <% polymorphic_type_column_name = @abstract_model.properties.detect {|p| field.association.foreign_type == p.name }.name %>
-                <label for="schema_<%= list %>_<%= polymorphic_type_column_name %>">
-                  <%= check_box_tag "schema[#{list}][]", polymorphic_type_column_name, true, { id: "schema_#{list}_#{polymorphic_type_column_name}" } %>
-                  <%= field.label + " [type]" %>
+                <label class="form-check" for="schema_<%= list %>_<%= polymorphic_type_column_name %>">
+                  <%= check_box_tag "schema[#{list}][]", polymorphic_type_column_name, true, { class: "form-check-input", id: "schema_#{list}_#{polymorphic_type_column_name}" } %>
+                  <span class="form-check-label"><%= field.label + " [type]" %></span>
                 </label>
               <% else %>
-                <label for="schema_<%= list %>_<%= field.name %>">
-                  <%= check_box_tag "schema[#{list}][]", field.name, true, { id: "schema_#{list}_#{field.name}" } %>
-                  <%= field.label %>
+                <label class="form-check" for="schema_<%= list %>_<%= field.name %>">
+                  <%= check_box_tag "schema[#{list}][]", field.name, true, { class: "form-check-input", id: "schema_#{list}_#{field.name}" } %>
+                  <span class="form-check-label"><%= field.label %></span>
                 </label>
               <% end %>
             </div>
@@ -41,16 +37,16 @@
     </div>
     <% visible_fields.select{ |f| f.association? && !f.association.polymorphic? }.each do |field| %>
       <% fields = field.associated_model_config.export.with(controller: self.controller, view: self, object: (associated_model = field.associated_model_config.abstract_model.model).new).visible_fields.select{ |f| !f.association? } %>
-      <div class="control-group mb-7">
+      <div class="control-group mt-7">
         <h2><%= t('admin.export.fields_from_associated', name: field.label.downcase) %></h2>
         <div class="controls">
-          <div class="row gy-1">
+          <div class="row gy-2">
             <% fields.each do |associated_model_field| %>
               <% list = associated_model_field.virtual? ? 'methods' : 'only' %>
               <div class="checkbox col-sm-3">
-                <label for="schema_include_<%= field.name %>_<%= list %>_<%= associated_model_field.name %>">
-                  <%= check_box_tag "schema[include][#{field.name}][#{list}][]", associated_model_field.name, true, { id: "schema_include_#{field.name}_#{list}_#{associated_model_field.name}" } %>
-                  <%= associated_model_field.label %>
+                <label class="form-check" for="schema_include_<%= field.name %>_<%= list %>_<%= associated_model_field.name %>">
+                  <%= check_box_tag "schema[include][#{field.name}][#{list}][]", associated_model_field.name, true, { class: "form-check-input", id: "schema_include_#{field.name}_#{list}_#{associated_model_field.name}" } %>
+                  <span class="form-check-label"><%= associated_model_field.label %></span>
                 </label>
               </div>
             <% end %>
@@ -59,25 +55,23 @@
       </div>
     <% end %>
   </fieldset>
-  <fieldset>
+  <fieldset class="mt-7">
     <h2><%= t('admin.export.options_for', name: 'csv') %></h2>
-    <div class="control-group mb-6">
+    <div class="control-group mb-4">
       <% guessed_encoding = @abstract_model.encoding %>
-      <label for="csv_options_encoding_to"><%= t('admin.export.csv.encoding_to') %></label>
+      <label class="form-label" for="csv_options_encoding_to"><%= t('admin.export.csv.encoding_to') %></label>
       <%= select_tag 'csv_options[encoding_to]', options_for_select(Encoding.name_list.sort), include_blank: true, placeholder: t('admin.misc.search'), :'data-enumeration' => true %>
-      <p class="form-text"><%= t('admin.export.csv.encoding_to_help', name: guessed_encoding) %></p>
+      <p class="form-text mb-0"><%= t('admin.export.csv.encoding_to_help', name: guessed_encoding) %></p>
     </div>
-    <div class="control-group mb-6">
-      <label>
-        <%= check_box_tag 'csv_options[skip_header]', 'true' %>
-        <%= t('admin.export.csv.skip_header') %>
-      </label>
-      <p class="form-text"><%= t('admin.export.csv.skip_header_help') %></p>
-    </div>
+    <label class="form-check control-group">
+      <%= check_box_tag 'csv_options[skip_header]', 'true', false, class: 'form-check-input' %>
+      <span class="form-check-label"><%= t('admin.export.csv.skip_header') %></span>
+    </label>
+    <p class="form-text mb-4"><%= t('admin.export.csv.skip_header_help') %></p>
     <div class="control-group">
-      <label for="csv_options_generator_col_sep"><%= t('admin.export.csv.col_sep') %></label>
+      <label class="form-label" for="csv_options_generator_col_sep"><%= t('admin.export.csv.col_sep') %></label>
       <%= select_tag 'csv_options[generator][col_sep]', options_for_select({ '' => t('admin.export.csv.default_col_sep'), "<comma> ','" => ',', "<semicolon> ';'" => ';', '<tabs>' => "'\t'" }), placeholder: t('admin.misc.search'), :'data-enumeration' => true %>
-      <p class="form-text"><%= t('admin.export.csv.col_sep_help', value: t('admin.export.csv.default_col_sep')) %></p>
+      <p class="form-text mb-0"><%= t('admin.export.csv.col_sep_help', value: t('admin.export.csv.default_col_sep')) %></p>
     </div>
   </fieldset>
   <div class="form-actions">
