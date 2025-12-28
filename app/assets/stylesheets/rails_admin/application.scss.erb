@@ -16,7 +16,7 @@
 
 // swop colors
 @import "swop/swop-colors/swop-colors";
-@import "swop/swop-themes/swop-<%= Swop.configuration.theme_style %>/swop-colors/swop-forest";
+@import "swop/swop-themes/swop-<%= Swop.configuration.theme_style %>/swop-colors/swop-<%= Swop.configuration.theme_color %>";
 
 // swop core
 @import "swop/swop-core/swop-variables";
@@ -49,6 +49,3 @@
 <% if defined?(ActionText::Engine) && Rails.gem_version >= Gem::Version.new('7.0') %>
   @import "trix";
 <% end %>
-
-
-// okay new now
