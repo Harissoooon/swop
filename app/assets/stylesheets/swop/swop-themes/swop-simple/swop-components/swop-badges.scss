@@ -8,18 +8,18 @@
   width: rem(32px);
 
   &.bg-default {
-    color: $secondary-color !important;
-    background-color: $secondary-light-color !important;
+    color: $white !important;
+    background-color: $secondary-color !important;
   }
 
   &.bg-success {
-    color: $success-color !important;
-    background-color: $success-light-color !important;
+    color: $white !important;
+    background-color: $success-color !important;
   }
 
   &.bg-danger {
-    color: $danger-color !important;
-    background-color: $danger-light-color !important;
+    color: $white !important;
+    background-color: $danger-color !important;
   }
 
   // smaller badges in rows

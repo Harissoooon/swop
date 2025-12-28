@@ -1,46 +1,29 @@
-$azure-blue: #0a84ff;     // private – primary
-$boring-rose: #595360;    // private – secondary
-$jade-green: #0cca4a;     // private – success
-$electric-slide: #f549e6; // private – info
-$dark-orange: #f58f29;    // private – warning
-$strawberry: #f33339;     // private – danger
-$brave-magneta: #110b16;  // private – light
+$primary-color: #bc51e6;
+$secondary-color: #695f74;
+$success-color: #0ea247;
+$info-color: #2f99ce;
+$warning-color: #d6961d;
+$danger-color: #c9403d;
+$light-color: #1b0925;
+$dark-color: #fefbff;
 
-$lavendar-cave: #0b070f; // private - body background
+$box-shadow-color: $black;
 
-$zesty-white: #e2e2e8; // private – text
+$body-bg: #12031c;
 
-$subtle-violet: #101a19; // private – border
-$proper-purple: #1e1625; // private – inputs border
+$body-color: #b4bccc;
+$body-secondary-color: $secondary-color;
+$body-dark-color: $dark-color;
 
-$primary-color: $azure-blue;
-$secondary-color: $boring-rose;
-$success-color: $jade-green;
-$info-color: $electric-slide;
-$warning-color: $dark-orange;
-$danger-color: $strawberry;
-$light-color: $brave-magneta;
-$dark-color: $white;
+$borders-color: #1c0e2c;
 
-$secondary-light-color: lighten($boring-rose, 38%);
-$success-light-color: lighten($jade-green, 51%);
-$danger-light-color: lighten($strawberry, 38%);
-
-$body-bg: $lavendar-cave;
-
-$body-color: $zesty-white;
-$body-secondary-color: $boring-rose;
-$body-dark-color: $white;
-
-$borders-color: $subtle-violet;
-
-$inputs-border-color: $proper-purple;
+$inputs-border-color: #391143;
 
 // miscellaneous
-$avatar-bg-color: lighten($light-color, 8%);
-$avatar-color: lighten($light-color, 24%);
+$avatar-bg-color: desaturate(lighten($light-color, 10%), 8%);
+$avatar-color: desaturate(lighten($light-color, 44%), 8%);
 
-$nav-link-hover-bg: lighten($light-color, 2%);
+$btn-body-hover-border: lighten($inputs-border-color, 3%);
+$btn-body-active-border: lighten($inputs-border-color, 1.5%);
 
-$btn-body-hover-border: lighten($inputs-border-color, 4%);
-$btn-body-active-border: lighten($inputs-border-color, 2%);
+$overlay-bg: rgba($black, 0.75);

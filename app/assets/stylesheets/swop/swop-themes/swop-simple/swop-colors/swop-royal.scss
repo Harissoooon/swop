@@ -1,46 +1,29 @@
-$azure-blue: #0a84ff;     // private – primary
-$soggy-clay: #6e7284;     // private – secondary
-$jade-green: #0cca4a;     // private – success
-$electric-slide: #f549e6; // private – info
-$dark-orange: #f58f29;    // private – warning
-$strawberry: #f33339;     // private – danger
-$new-wave: #090e1b;       // private – light
+$primary-color: #1f58d2;
+$secondary-color: #545c6c;
+$success-color: #0ea247;
+$info-color: #2f99ce;
+$warning-color: #d6961d;
+$danger-color: #c9403d;
+$light-color: #0e1222;
+$dark-color: #fbfbff;
 
-$ocean-police: #060a14; // private - body background
+$box-shadow-color: $black;
 
-$happy-salt: #d8e2f6; // private – text
+$body-bg: #070b1b;
 
-$perfect-slice: #0c1527; // private – border
-$new-breath: #141c32;    // private – inputs border
+$body-color: #b4bccc;
+$body-secondary-color: $secondary-color;
+$body-dark-color: $dark-color;
 
-$primary-color: $azure-blue;
-$secondary-color: $soggy-clay;
-$success-color: $jade-green;
-$info-color: $electric-slide;
-$warning-color: $dark-orange;
-$danger-color: $strawberry;
-$light-color: $new-wave;
-$dark-color: $white;
+$borders-color: #101621;
 
-$secondary-light-color: lighten($soggy-clay, 38%);
-$success-light-color: lighten($jade-green, 51%);
-$danger-light-color: lighten($strawberry, 38%);
-
-$body-bg: $ocean-police;
-
-$body-color: $happy-salt;
-$body-secondary-color: $soggy-clay;
-$body-dark-color: $white;
-
-$borders-color: $perfect-slice;
-
-$inputs-border-color: $new-breath;
+$inputs-border-color: #232545;
 
 // miscellaneous
-$avatar-bg-color: lighten($light-color, 8%);
-$avatar-color: lighten($light-color, 24%);
+$avatar-bg-color: desaturate(lighten($light-color, 10%), 8%);
+$avatar-color: desaturate(lighten($light-color, 44%), 8%);
 
-$nav-link-hover-bg: lighten($light-color, 2%);
+$btn-body-hover-border: lighten($inputs-border-color, 3%);
+$btn-body-active-border: lighten($inputs-border-color, 1.5%);
 
-$btn-body-hover-border: lighten($inputs-border-color, 4%);
-$btn-body-active-border: lighten($inputs-border-color, 2%);
+$overlay-bg: rgba($black, 0.75);
