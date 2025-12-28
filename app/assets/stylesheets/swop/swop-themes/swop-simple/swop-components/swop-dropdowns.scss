@@ -1,6 +1,8 @@
 .dropdown {
 
   &-menu {
+    border-top-left-radius: $dropdown-border-radius !important;
+    border-top-right-radius: $dropdown-border-radius !important;
     box-shadow: $md-box-shadow;
   }
 

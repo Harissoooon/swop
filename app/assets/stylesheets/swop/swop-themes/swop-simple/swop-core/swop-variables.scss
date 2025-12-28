@@ -4,9 +4,9 @@ $md-border-radius: $base-border-radius * 2; // 8px
 $lg-border-radius: $base-border-radius * 3; // 12px
 $xl-border-radius: $base-border-radius * 4; // 16px
 
-$sm-box-shadow: 0 0 rem(24px) 0 rgba($dark-color, 0.04);
-$md-box-shadow: 0 0 rem(48px) 0 rgba($dark-color, 0.04);
-$lg-box-shadow: 0 0 rem(96px) 0 rgba($dark-color, 0.04);
+$sm-box-shadow: 0 0 rem(24px) 0 rgba($box-shadow-color, 0.04);
+$md-box-shadow: 0 0 rem(48px) 0 rgba($box-shadow-color, 0.04);
+$lg-box-shadow: 0 0 rem(96px) 0 rgba($box-shadow-color, 0.04);
 
 // typography
 $figtree: 'Figtree', 'Helvetica Neue', Helvetica, Arial, sans-serif; // private
