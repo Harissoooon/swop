@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   # Optional metadata
   spec.metadata = {
   "allowed_push_host" => "https://rubygems.org",
-  "homepage_uri" => "https://github.com/Harissoooon/swop",
+  "homepage_uri" => "https://www.swopthemes.com/",
   "source_code_uri"  => "https://github.com/Harissoooon/swop"
 }
 
