@@ -2,7 +2,6 @@
 
 require_relative "swop/version"
 require "swop/engine" if defined?(Rails)
-require "swop/railtie" if defined?(Rails)
 
 module Swop
   class Error < StandardError; end
