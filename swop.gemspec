@@ -24,8 +24,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Dependencies
-  spec.add_dependency "rails", "~> 7.0"
   spec.add_dependency "rails_admin", "~> 3.0"
-  spec.add_dependency "bootstrap", "~> 5.3"
-  spec.add_dependency "sassc-rails"
 end
