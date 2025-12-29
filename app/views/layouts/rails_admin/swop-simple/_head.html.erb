@@ -4,6 +4,15 @@
 <meta content="NONE,NOARCHIVE" name="robots">
 <meta content="false" name="turbo-prefetch">
 <%= csrf_meta_tag %>
+
+<% if RailsAdmin.config.respond_to?(:favicon) && RailsAdmin.config.favicon.present? %>
+  <% favicon = RailsAdmin.config.favicon %>
+<% else %>
+  <% favicon = "swop/favicon.ico" %>
+<% end %>
+
+<%= favicon_link_tag favicon %>
+
 <% case RailsAdmin::config.asset_source
    when :webpacker %>
   <%= stylesheet_pack_tag "rails_admin", data: {'turbo-track': 'reload'} %>
