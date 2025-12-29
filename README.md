@@ -17,6 +17,8 @@ If bundler is not being used to manage dependencies, install the gem by executin
 gem install swop
 ```
 
+## Configuration
+
 After installing, create an initializer file at config/initializers/swop.rb to configure the theme:
 
 ```ruby
@@ -26,12 +28,12 @@ Swop.configure do |config|
 end
 ```
 
-This file lets you choose the ```style``` and ```color``` of your Rails Admin dashboard. Currently, there is one ```style``` available (:simple) and multiple ```color``` options (:amethyst, :dark, :forest, :light, :royal). More styles and colors will be added in future releases.
+This file lets you choose the ```style``` and ```color``` of your Rails Admin dashboard. Currently, there is one ```style``` available (Simple) and multiple ```color``` options (Amethyst, Dark, Forest, Light and Royal). More styles and colors will be added in future releases.
 
 
 ## Usage
 
-Swop is completely **plug-and-play**. Once installed, the theme is automatically applied to your Rails Admin dashboards—**no additional setup or configuration is needed**.
+Swop is completely **plug-and-play**. Once installed and after you have created ```swop.rb``` in your initializers folder, the theme is automatically applied to your Rails Admin dashboards—**no additional setup or configuration is needed**.
 
 Future versions of Swop will include options to **customize the theme**, but for now, you can enjoy a polished, modern admin interface instantly.
 
