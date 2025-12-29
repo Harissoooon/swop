@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["harissoooon@outlook.com"]
   spec.summary = "Plug-and-play RailsAdmin themes"
   spec.description = "Swop is a Rails Admin theme gem that lets you instantly apply polished, modern themes to your Rails Admin dashboards. With Swop, you don’t need to write any CSS—just install the gem and your admin interface gets a clean, professional look. Swop saves development time and helps make your admin dashboards more effective, so you can focus on managing your data instead of styling your interface."
-  spec.homepage = "https://github.com/Harissoooon/swop"
+  spec.homepage = "https://www.swopthemes.com/"
   spec.required_ruby_version = ">= 2.6.0"
   spec.license = "MIT"
 
