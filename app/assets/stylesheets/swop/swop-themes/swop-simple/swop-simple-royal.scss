@@ -1,0 +1,35 @@
+// swop
+@import "swop/swop";
+
+// theme colors
+@import "swop/swop-themes/swop-simple/swop-colors/swop-royal";
+
+// core
+@import "swop/swop-core/swop-variables";
+
+// theme core
+@import "swop/swop-themes/swop-simple/swop-core/swop-variables";
+
+// core
+@import "swop/swop-core/swop-bootstrap-variables";
+
+// theme core
+@import "swop/swop-themes/swop-simple/swop-core/swop-bootstrap-variables";
+
+// fontawesome
+@import "rails_admin/font-awesome";
+
+// bootstrap
+@import "rails_admin/bootstrap/bootstrap";
+
+// base
+@import "swop/swop-base/swop-typography";
+
+// theme base
+@import "swop/swop-themes/swop-simple/swop-simple-base";
+
+// theme layouts
+@import "swop/swop-themes/swop-simple/swop-simple-layouts";
+
+// theme components
+@import "swop/swop-themes/swop-simple/swop-simple-components";

@@ -1,6 +1,7 @@
 .table {
 
   th {
+    background-color: $body-bg !important;
     padding-bottom: rem(10px) !important;
     padding-left: $table-cell-padding-x !important;
     padding-right: $table-cell-padding-x !important;
@@ -42,6 +43,7 @@
   }
 
   td {
+    background-color: $body-bg !important;
     padding: $table-cell-padding-y $table-cell-padding-x !important;
   }
 

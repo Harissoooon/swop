@@ -21,6 +21,7 @@
   <% handle_asset_dependency_error do %>
     <%= stylesheet_link_tag "rails_admin/application.css", media: :all, data: {'turbo-track': 'reload'} %>
     <%= javascript_include_tag "rails_admin/application.js", defer: true, data: {'turbo-track': 'reload'} %>
+    <%= stylesheet_link_tag "swop/swop-themes/swop-#{Swop.configuration.style}/swop-#{Swop.configuration.style}-#{Swop.configuration.color}.css", media: :all, data: {'turbo-track': 'reload'} %>
   <% end %>
 <% when :vite %>
   <%= vite_javascript_tag "rails_admin", defer: true, data: {'turbo-track': 'reload'} %>
