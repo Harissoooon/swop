@@ -1,4 +1,4 @@
-$primary-color: #0879e9;
+$primary-color: #ffffff;
 $secondary-color: #586068;
 $success-color: #0ea247;
 $info-color: #2f99ce;
@@ -20,7 +20,7 @@ $borders-color: #13151b;
 $inputs-border-color: #1f2329;
 
 // miscellaneous
-$component-primary-color: $white;
+$component-primary-color: $black;
 
 $avatar-bg-color: desaturate(lighten($light-color, 8%), 16%);
 $avatar-color: desaturate(lighten($light-color, 40%), 16%);

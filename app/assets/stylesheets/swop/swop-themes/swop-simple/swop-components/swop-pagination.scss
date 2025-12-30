@@ -12,6 +12,14 @@
       border-radius: $sm-inputs-btn-border-radius;
       font-size: $pagination-font-size;
       padding: rem(11px 18.2625px);
+
+    }
+
+    .page-item.active {
+
+      .page-link {
+        font-weight: $fw-semibold !important;
+      }
     }
   }
 }

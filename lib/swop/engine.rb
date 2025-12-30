@@ -3,9 +3,12 @@ module Swop
     initializer "swop.assets.precompile" do |app|
       app.config.assets.precompile += %w[swop/favicon.ico]
       app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-amethyst.css]
+      app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-arctic.css]
       app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-dark.css]
       app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-forest.css]
+      app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-leather.css]
       app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-light.css]
+      app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-onyx.css]
       app.config.assets.precompile += %w[swop/swop-themes/swop-simple/swop-simple-royal.css]
     end
   end

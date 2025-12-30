@@ -20,6 +20,8 @@ $borders-color: #041913;
 $inputs-border-color: #0a2f28;
 
 // miscellaneous
+$component-primary-color: $white;
+
 $avatar-bg-color: desaturate(lighten($light-color, 8%), 8%);
 $avatar-color: desaturate(lighten($light-color, 40%), 8%);
 

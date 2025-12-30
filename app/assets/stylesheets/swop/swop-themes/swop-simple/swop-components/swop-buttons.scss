@@ -5,16 +5,16 @@
     @include button-variant(
       $background: $primary-color,
       $border: $primary-color,
-      $color: $white,
+      $color: $component-primary-color,
       $hover-background: darken($primary-color, 2%),
       $hover-border: darken($primary-color, 2%),
-      $hover-color: $white,
+      $hover-color: $component-primary-color,
       $active-background: darken($primary-color, 1%),
       $active-border: darken($primary-color, 1%),
-      $active-color: $white,
+      $active-color: $component-primary-color,
       $disabled-background: $primary-color,
       $disabled-border: $primary-color,
-      $disabled-color: $white
+      $disabled-color: $component-primary-color
     );
   }
 
