@@ -45,7 +45,11 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Hariss
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+This theme is free to use for personal or commercial projects.
+
+Redistribution, resale, or sublicensing is strictly prohibited.
+
+© 2025 Swop
 
 
 ## Code of Conduct
