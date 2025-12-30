@@ -28,7 +28,7 @@ Swop.configure do |config|
 end
 ```
 
-This file lets you choose the ```style``` and ```color``` of your Rails Admin dashboard. Currently, there is one ```style``` available (Simple) and multiple ```color``` options (Amethyst, Dark, Forest, Light and Royal). More styles and colors will be added in future releases.
+This file lets you choose the ```style``` and ```color``` of your Rails Admin dashboard. Currently, there is one ```style``` available (Simple) and multiple ```color``` options (Amethyst, Arctic, Dark, Forest, Leather, Light, Onyx and Royal). More styles and colors will be added in future releases.
 
 
 ## Usage
