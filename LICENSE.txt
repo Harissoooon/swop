@@ -1,20 +1,29 @@
-Copyright (c) 2025 Swop
+Copyright © 2026 Swop. All rights reserved.
 
-This theme is provided for free for personal or commercial use under the following terms:
+This theme is NOT open source.
+
+Permission is granted to use this theme free of charge for personal or commercial
+applications, including client projects and SaaS products, subject to the
+following conditions.
 
 You may:
-- Use this theme in your personal or commercial projects.
-- Modify the theme for your own use.
+- Use the theme in personal, client, or commercial applications.
+- Modify the theme for internal use within your own projects.
 
 You may NOT:
-- Redistribute, resell, or sublicense this theme in any form.
-- Claim this theme as your own or remove/alter the copyright notice.
-- Use this theme as part of a product intended for resale without written permission from Swop.
-- Use the theme in any unlawful, immoral, or offensive manner.
+- Sell, resell, license, sublicense, distribute, or redistribute the theme,
+  whether in original or modified form.
+- Include the theme as part of a theme pack, UI kit, boilerplate, starter kit,
+  or any product where the theme itself is a primary value.
+- Claim authorship of the theme or remove or alter copyright notices.
+- Publish the theme or derivatives publicly without written permission from Swop.
 
 Disclaimer:
-This theme is provided "as is", without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. Swop shall not be liable for any damages arising from the use or inability to use this theme.
+This software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose, and non-infringement. In no event shall Swop
+be liable for any claim, damages, or other liability arising from its use.
 
 Additional Terms:
-- Swop reserves the right to update, modify, or change the licensing terms at any time for future versions.
-- Any version of the theme obtained from unofficial sources is not covered by this license.
+- Swop reserves the right to change licensing terms for future versions.
+- Versions obtained from unofficial sources are not licensed.

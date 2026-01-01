@@ -49,7 +49,7 @@ This theme is free to use for personal or commercial projects.
 
 Redistribution, resale, or sublicensing is strictly prohibited.
 
-© 2025 Swop
+© 2026 Swop
 
 
 ## Code of Conduct
